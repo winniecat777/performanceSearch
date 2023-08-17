@@ -1,0 +1,19 @@
+//google icons
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+// 其他設定
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+$container-max-widths: (
+  xxl: 1434px
+);
+
+$grid-gutter-width:  1.875rem;

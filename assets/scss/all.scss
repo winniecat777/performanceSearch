@@ -1,12 +1,33 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+
+@import './utils/base';
+@import './utils/font';
+@import './utils/mixin';
+
+@import './layout/header';
+@import './layout/footer';
+
+
+@import './pages/index';
+@import './pages/about';
+@import './pages/activityInfo';
+@import './pages/add-activityList';
+@import './pages/centre-generalMember';
+@import './pages/centre_performingGroup';
+@import './pages/courseInfo';
+@import './pages/favorite';
+@import './pages/favoriteMore';
+@import './pages/management-activityInfo';
+@import './pages/management-generalMember';
+@import './pages/management-performingGroup';
+@import './pages/managementLogin';
+@import './pages/member';
+@import './pages/performanceInfo';
+@import './pages/signUp-generalMember';
+@import './pages/signUp_performingGroup';
+@import './pages/venueInfo-innerPage';
+@import './pages/venueInfo';
+
+
 @import "../../node_modules/bootstrap";
-
-
-
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-
-@import './pages/index.scss';
-

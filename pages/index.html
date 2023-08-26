@@ -4,60 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+
+    <!-- google Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>首頁- 藝吧查表演</title>
   </head>
-  <body>
-    <%- include('./layout/header'); -%>
+  <body>   
+    
+    
+<div class="wrapper block-border">
+    <!-- header -->
+<header class="block-border-bottom">
+<div class="container d-flex justify-content-between align-items-center">
+<div class="logotype d-flex align-items-center">
+  <div class="logoPixel" href="index.html">
+    <a class="pt-16 pr-16 pb-16 pl-16" href="#">
+    <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/18-logo-01.png" alt="logo">
+    </a>
+  </div>
+  <div class="logoFont block-border-right block-border-left" href="index.html">
+    <a class="pt-16 pr-32 pb-16 pl-16" href="#">
+    <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/18-logo-02.png" alt="logo">
+    </a>
+  </div>
+</div>
+<nav class="d-flex">
+  <ul class="d-flex align-items-center">
+    <li><a href="#" class="pl-16 pr-16 fs-6">活動資訊</a></li>
+    <li><a href="#" class="pl-16 pr-16 fs-6">場地資訊</a></li>
+    <li><a href="#" class="pl-16 pr-32 fs-6">關於我們</a></li>
+    <li><a href="#" class="pl-32 pr-32 fs-6 block-border-left"><span class="material-icons-outlined">
+      favorite
+      </span></a></li>
+    <li><a href="#" class="pl-32 pr-32 fs-6 block-border-left"><span class="material-icons-round">
+      account_circle
+      </span></a></li>
+  </ul>
+</nav>
+</div>
+</header>
+    <!-- end header -->
 
-    <h1 class="text-primary">我是首頁</h1>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title"><span class="material-symbols-outlined">
-          settings
-          </span>卡片元件</h5>
-        <p class="card-text fs-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
+    <!-- footer -->
+<footer>
+<div class="container">
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="rxzan">
-      Rxzan push
-    </div>
-
-    <%- include('./layout/footer'); -%>
-
+</div>
+</footer>
+    <!-- end footer -->
+</div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

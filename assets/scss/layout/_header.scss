@@ -1,4 +1,41 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+
+header,
+.logoPixel,
+.logoFont{
+  height: 90px;
+}
+// logo
+.logoPixel,
+.logoFont{
+  vertical-align: middle;
+}
+.logoPixel{
+  img{
+      width: auto;
+      height: 56px;
+  }
+}
+.logoFont{
+  img{
+      width: auto;
+      height: 52px;
+  }
+}
+
+// nav
+nav a{    
+  height: 90px;
+  color: $dark;
+  line-height: 90px;
+  &:hover{
+      color:$primary;
+  }
+}
+
+.material-symbols-outlined {  
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
 }

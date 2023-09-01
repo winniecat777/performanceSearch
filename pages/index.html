@@ -4,28 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- google Material icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-
     <title>首頁- 藝吧查表演</title>
   </head>
-  <body>   
-    
-    
+<body>      
 <div class="wrapper block-border">
     <!-- header -->
 <header class="block-border-bottom">
 <div class="container d-flex justify-content-between align-items-center">
+  <!-- LOGO -->
 <div class="logotype d-flex align-items-center">
-  <div class="logoPixel" href="index.html">
-    <a class="pt-16 pr-16 pb-16 pl-16" href="#">
+  <div class="logoPixel block-border-left" href="index.html">
+    <a class="pt-4 pr-4 pb-4 pl-4" href="#">
     <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/18-logo-01.png" alt="logo">
     </a>
   </div>
   <div class="logoFont block-border-right block-border-left" href="index.html">
-    <a class="pt-16 pr-32 pb-16 pl-16" href="#">
+    <a class="pt-4 pr-4 pb-4 pl-4" href="#">
     <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/18-logo-02.png" alt="logo">
     </a>
   </div>
@@ -35,27 +29,31 @@
     <li><a href="#" class="pl-16 pr-16 fs-6">活動資訊</a></li>
     <li><a href="#" class="pl-16 pr-16 fs-6">場地資訊</a></li>
     <li><a href="#" class="pl-16 pr-32 fs-6">關於我們</a></li>
-    <li><a href="#" class="pl-32 pr-32 fs-6 block-border-left"><span class="material-icons-outlined">
+    <li><a href="#" class="pl-32 pr-32 fs-6 block-border-left d-flex align-items-center">
+      <span class="material-symbols-outlined">
       favorite
-      </span></a></li>
-    <li><a href="#" class="pl-32 pr-32 fs-6 block-border-left"><span class="material-icons-round">
-      account_circle
-      </span></a></li>
+      </span>
+    </a></li>
+    <li><a href="#" class="pl-32 pr-32 fs-6 block-border-left block-border-right d-flex align-items-center">
+      <span class="material-symbols-outlined">account_circle</span>
+    </a></li>
   </ul>
 </nav>
 </div>
 </header>
     <!-- end header -->
 
+<main>
+  
+</main>
 
     <!-- footer -->
-<footer>
-<div class="container">
 
-</div>
-</footer>
+  <%- include('./layout/footer') -%>
     <!-- end footer -->
 </div>
+
+
     <script type="module" src="../main.js"></script>
   </body>
 </html>

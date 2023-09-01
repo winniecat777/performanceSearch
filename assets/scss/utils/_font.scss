@@ -54,3 +54,9 @@ $headings-line-height:
 .fs-12 {
     font-size: 12px;
 }
+a.text-hover-1{
+    color: $black;
+    &:hover{
+        color: $primary;
+    }
+}

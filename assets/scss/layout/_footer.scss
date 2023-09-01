@@ -1,4 +1,26 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.logo-footer{
+  width: 156px;
+  height: auto;
+}
+
+.sitemap a{
+  color: $black;
+  &:hover{
+      color: $primary;
+  }
+}
+.icon-img{
+  width: auto;
+  height: 28px;
+}
+.special-link{
+  width: 160px;
+  margin-left: auto;
+}
+
+.copyright{
+  font-size: 13px;
+  background: $dark;
+  color: $white;
+  letter-spacing: 2px;
 }

@@ -175,6 +175,30 @@ table {
 .pl-4{
   padding-left: 1rem !important;
 }
+.pt-5{
+  padding-top: 1.25rem !important;
+}
+.pr-5{
+  padding-right: 1.25rem !important;
+}
+.pb-5{
+  padding-bottom: 1.25rem !important;
+}
+.pl-5{
+  padding-left: 1.25rem !important;
+}
+.pt-8{
+  padding-top: 2rem !important;
+}
+.pr-8{
+  padding-right: 2rem !important;
+}
+.pb-8{
+  padding-bottom: 2rem !important;
+}
+.pl-8{
+  padding-left: 2rem !important;
+}
 .pt-10{
   padding-top: 2.5rem !important;
 }
@@ -211,4 +235,23 @@ table {
 }
 .ml-2{
   padding-left: 0.5rem !important;
+}
+
+.wrapper{
+  border: 1px solid $black;
+}
+.block-border{
+  border: 1px solid $black;
+}
+.block-border-top{
+  border-top: 1px solid $black;
+}
+.block-border-right{
+  border-right: 1px solid $black;
+}
+.block-border-bottom{
+  border-bottom: 1px solid $black;
+}
+.block-border-left{
+  border-left: 1px solid $black;
 }

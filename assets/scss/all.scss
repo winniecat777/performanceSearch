@@ -1,9 +1,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import "../../node_modules/bootstrap";
 
 @import './utils/base';
 @import './utils/font';
 @import './utils/mixin';
+
+
 
 @import './layout/header';
 @import './layout/bannerSwiper';
@@ -30,10 +33,4 @@
 @import './pages/venueInfo-innerPage';
 @import './pages/venueInfo';
 
-
-
-
-
-
-@import "../../node_modules/bootstrap";
 

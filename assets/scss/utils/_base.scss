@@ -74,6 +74,14 @@ $spacers: (
   8: $spacer * 3,   //48px
 ) !default;
 
+//ol,ul reset
+ol,ul{
+  padding: 0;
+}
+ol,ul,dl{
+  margin: 0;
+}
+
 // google icons
 .material-icons {
   font-family: 'Material Icons';

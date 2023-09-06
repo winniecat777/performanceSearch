@@ -1,0 +1,35 @@
+.swiper-slide {
+    overflow: hidden; /*把溢出的部分隱藏掉*/
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;/*變成彈性盒子顯示*/
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;/*水平對齊*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;/*垂直對齊*/
+    }
+    
+    /*媒體最大寬度值用％去算實際值，直接用％圖會整體照比例變小，不會只顯示中間*/
+    /*窗口為1200px/圖1920px約為0.6，980px/0.6=img width*/
+    @media(max-width:980px){
+        .swiper-slide img{width: 1600px;}
+    }
+    @media(max-width:780px){
+        .swiper-slide img{width: 1300px;}
+    }
+    @media(max-width:580px){
+        .swiper-slide img{width: 970px;}
+    }
+    @media(max-width:380px){
+        .swiper-slide img{width: 640px;}
+    }

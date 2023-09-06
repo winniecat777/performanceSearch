@@ -1,5 +1,6 @@
 //google icons
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
 // 其他設定
 a{
     display: inline-block;
@@ -11,7 +12,6 @@ img{
     vertical-align: middle;
 }
 
-
 //container、格線設定
 $container-max-widths: (
   xxl: 1434px
@@ -19,12 +19,38 @@ $container-max-widths: (
 
 $grid-gutter-width:  1.875rem;
 
+//body 中間 wrap 的 width、border 設定
+.wrap{
+  max-width: 1636px;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+//Dashed grid background
+$grid-size: 30px;
+$dash-length: 5px;
+$dash-width: 1px;
+$dash-color: #D4F4F2;
+$background: #FFFFFF;
+
+.dashed-bg {
+  background-color: $background;
+  background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
+  background-image:
+    linear-gradient(to bottom, transparent $dash-length, $background $dash-length),
+    linear-gradient(to right, $dash-color $dash-width, transparent $dash-width),
+    linear-gradient(to right, transparent $dash-length, $background $dash-length),
+    linear-gradient(to bottom, $dash-color $dash-width, transparent $dash-width);
+}
+
 //color
 $primary:       #B0CD8E;
 $secondary:     #F6CD86;
 $accent:        #FF9FA6;
 $light:         #ECECEC;
-$black:         #413A38;
+$dark:          #413A38;
+$white:         #FFFFFF;
+$black:         #000000;
 
 $theme-colors: (
   "primary":    $primary,
@@ -33,3 +59,192 @@ $theme-colors: (
   "light":      $light,
   "black":      $black,
 );
+
+//spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, //4px
+  2: $spacer * .5,  //8px
+  3: $spacer * .75, //12px
+  4: $spacer,       //16px
+  5: $spacer * 1.5, //24px
+  6: $spacer * 2,   //32px
+  7: $spacer * 2.5, //40px
+  8: $spacer * 3,   //48px
+) !default;
+
+//ol,ul reset
+ol,ul{
+  padding: 0;
+}
+ol,ul,dl{
+  margin: 0;
+}
+
+// google icons
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.pt-0{
+  padding-top: 0;
+}
+.pr-0{
+  padding-right: 0;
+}
+.pb-0{
+  padding-bottom: 0;
+}
+.pl-0{
+  padding-left: 0;
+}
+.pt-1{
+  padding-top: 0.25rem !important;
+}
+.pr-1{
+  padding-right: 0.25rem !important;
+}
+.pb-1{
+  padding-bottom: 0.25rem !important;
+}
+.pl-1{
+  padding-left: 0.25rem !important;
+}
+.pt-2{
+  padding-top: 0.5rem !important;
+}
+.pr-2{
+  padding-right: 0.5rem !important;
+}
+.pb-2{
+  padding-bottom: 0.5rem !important;
+}
+.pl-2{
+  padding-left: 0.5rem !important;
+}
+.pt-3{
+  padding-top: 0.75rem !important;
+}
+.pr-3{
+  padding-right: 0.75rem !important;
+}
+.pb-3{
+  padding-bottom: 0.75rem !important;
+}
+.pl-3{
+  padding-left: 0.75rem !important;
+}
+.pt-4{
+  padding-top: 1rem !important;
+}
+.pr-4{
+  padding-right: 1rem !important;
+}
+.pb-4{
+  padding-bottom: 1rem !important;
+}
+.pl-4{
+  padding-left: 1rem !important;
+}
+.pt-5{
+  padding-top: 1.25rem !important;
+}
+.pr-5{
+  padding-right: 1.25rem !important;
+}
+.pb-5{
+  padding-bottom: 1.25rem !important;
+}
+.pl-5{
+  padding-left: 1.25rem !important;
+}
+.pt-8{
+  padding-top: 2rem !important;
+}
+.pr-8{
+  padding-right: 2rem !important;
+}
+.pb-8{
+  padding-bottom: 2rem !important;
+}
+.pl-8{
+  padding-left: 2rem !important;
+}
+.pt-10{
+  padding-top: 2.5rem !important;
+}
+.pr-10{
+  padding-right: 2.5rem !important;
+}
+.pb-10{
+  padding-bottom: 2.5rem !important;
+}
+.pl-10{
+  padding-left: 2.5rem !important;
+}
+
+.mt-1{
+  padding-top: 0.25rem !important;
+}
+.mr-1{
+  padding-right: 0.25rem !important;
+}
+.mb-1{
+  padding-bottom: 0.25rem !important;
+}
+.ml-1{
+  padding-left: 0.25rem !important;
+}
+.mt-2{
+  padding-top: 0.5rem !important;
+}
+.mr-2{
+  padding-right: 0.5rem !important;
+}
+.mb-2{
+  padding-bottom: 0.5rem !important;
+}
+.ml-2{
+  padding-left: 0.5rem !important;
+}
+
+.wrapper{
+  border: 1px solid $black;
+}
+.block-border{
+  border: 1px solid $black;
+}
+.block-border-top{
+  border-top: 1px solid $black;
+}
+.block-border-right{
+  border-right: 1px solid $black;
+}
+.block-border-bottom{
+  border-bottom: 1px solid $black;
+}
+.block-border-left{
+  border-left: 1px solid $black;
+}

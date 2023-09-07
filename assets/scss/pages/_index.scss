@@ -1,8 +1,8 @@
 .bg-space{
-  max-width: 10%;
+  width: 5%;
 }
 .findCourse{
-  max-width: 90%;
+  width: 95%;
   h2{
     background: #B0CD8E;
     color: #fff;
@@ -34,5 +34,71 @@
       color: #fff;
       border-left: 0;
     }  
+  }
+}
+.frame {
+  background-color: transparent;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 260px;
+  transform-style: preserve-3d;
+  perspective: 2000px; //透視效果
+  transition: .4s;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top: 6px solid #F6CD86;
+    border-left: 6px solid #F6CD86;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 6px solid #F6CD86;
+    border-right: 6px solid #F6CD86;
+  }
+
+  .card {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% - 60px);
+    border-radius: 3px;
+    transition: .4s;
+    .text {
+      position: relative;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 3px;
+      text-align: center;
+      width: 100%;
+      padding: 10px 20px;
+      line-height: 1.5;
+      h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  &:hover {
+    .card {
+      transform: rotateY(20deg) skewY(-3deg)
+    }
+    transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg)
   }
 }

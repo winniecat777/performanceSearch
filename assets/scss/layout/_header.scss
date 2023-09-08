@@ -25,12 +25,16 @@ header,
 // nav
 nav a{    
   height: 90px;
-  color: $dark;
   line-height: 90px;
-  &:hover{
-      color:$primary;
-  }
 }
+// nav a{    
+//   height: 90px;
+//   color: $dark;
+//   line-height: 90px;
+//   &:hover{
+//       color:$primary;
+//   }
+// }
 
 .material-symbols-outlined {  
   font-variation-settings:

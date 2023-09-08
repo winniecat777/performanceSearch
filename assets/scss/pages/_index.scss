@@ -246,7 +246,6 @@ html {
   .banner-part {
     position: relative;
     max-width: 100%;
-    opacity: 0.85;
 
     .banner-content {
       position: absolute;
@@ -259,6 +258,7 @@ html {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      opacity: 0.85;
 
       .banner-container {
         width: 82%;

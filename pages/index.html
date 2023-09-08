@@ -5,46 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首頁- 藝吧查表演</title>
+    <!-- CSS Quote Box Hover Effects -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
-<body>      
-<div class="wrapper block-border">
-    <!-- header -->
-<header class="block-border-bottom">
-<div class=" d-flex justify-content-between align-items-center">
-  <!-- LOGO -->
-<div class="logotype d-flex align-items-center">
-  <div class="logoPixel block-border-left" href="index.html">
-    <a class="pt-4 pr-4 pb-4 pl-4" href="#">
-    <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/18-logo-01.png" alt="logo">
-    </a>
-  </div>
-  <div class="logoFont block-border-right block-border-left" href="index.html">
-    <a class="pt-4 pr-4 pb-4 pl-4" href="#">
-    <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/18-logo-02.png" alt="logo">
-    </a>
-  </div>
-</div>
-<nav class="d-flex">
-  <ul class="d-flex align-items-center list-unstyled">
-    <li><a href="#" class="pl-4 pr-4 fs-6">活動資訊</a></li>
-    <li><a href="#" class="pl-4 pr-4 fs-6">場地資訊</a></li>
-    <li><a href="about.html" class="pl-4 pr-4 fs-6">關於我們</a></li>
-    <li><a href="#" class="pl-5 pr-5 fs-6 block-border-left d-flex align-items-center">
-      <span class="material-symbols-outlined">
-      favorite
-      </span>
-    </a></li>
-    <li><a href="#" class="pl-5 pr-5 fs-6 block-border-left block-border-right d-flex align-items-center">
-      <span class="material-symbols-outlined">account_circle</span>
-    </a></li>
-  </ul>
-</nav>
-</div>
-</header>
-    <!-- end header -->
+  
+<body>
+  <%- include('./layout/header'); -%>      
 
-<main>
-  <!-- section 1  -->
+  <main>
+      <!-- section 1  -->
   <section class="section-warpper">
 
     <!-- dashed-background start -->
@@ -96,21 +65,45 @@
       <img class="banner-img" src="../../assets/images/Rectangle.png" alt="">
       <div class="banner-bg"></div>
     </div>
-
+    
     <!-- banner end -->
 
   </section>
-
   <!-- end section 1  -->
+    
+    
+    
+    <div class="d-flex">
+      <div class="bg-space"><a class="d-block"></a></div>
+      <div class="findCourse bg-primary">
+        <div class="pt-6 mb-6 d-flex align-items-center">
+          <h2><span>找</span><span>課</span><span>程</span></h2>
+          <img src="../assets/images/h2-bg-side.png" alt="h2-bg-side">
+        </div>
+        <div class="container">
+          <ul class="row list-unstyled mb-0">
+            <li class="col-3">
+              <div class="frame">
+                <div class="card">
+                  <div class="text">
+                    <h5>Quote the day</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-3"></li>
+            <li class="col-3"></li>
+            <li class="col-3"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
 
-
-</main>
-
-    <!-- footer -->
   <%- include('./layout/footer') -%>
-    <!-- end footer -->
-</div>
-
 
     <script type="module" src="../main.js"></script>
   </body>

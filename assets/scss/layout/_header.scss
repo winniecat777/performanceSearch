@@ -6,6 +6,13 @@ header,
     height: 72px;    
   }
 }
+// a.nav-item,
+// a.navbar-btn{
+//   color: $dark !important;
+//   &:hover{
+//     color: $primary !important;
+//   }
+// }
 
 // logo
 .logoPixel,
@@ -28,23 +35,26 @@ header,
 }
 
 // nav
-nav a{    
-  // height: 90px;
-  color: $dark;
-  // line-height: 90px;
-  outline: none;
-  &:hover{
-      color:$primary;
-  }
+// nav a{    
+//   // height: 90px;
+//   color: $dark;
+//   // line-height: 90px;
+//   outline: none;
+//   &:hover{
+//       color:$primary;
+//   }
   
-}
+// }
 //toggle
 .navbar-toggler{
+  height: 88px;
   border: 0 0 0 1px;
   border-radius: 0;  
   // background: $dark;
 }
-
+.navbar-collapse{
+  z-index: 9;
+}
 
 .material-symbols-outlined {  
   font-variation-settings:

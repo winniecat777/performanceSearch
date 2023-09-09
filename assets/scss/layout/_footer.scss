@@ -1,8 +1,17 @@
-.logo-footer{
+a.logo-footer{
+  @include mobile{
+  display: block;
+  text-align: center;
+  }
+}
+.logo-footer img{
   width: 156px;
   height: auto;
+  @include mobile{
+    width: 128px;
+    margin: 0 auto;
+  }
 }
-
 .sitemap a{
   color: $black;
   &:hover{
@@ -14,7 +23,7 @@
   height: 28px;
 }
 .special-link{
-  width: 160px;
+  width: 164px;
   margin-left: auto;
 }
 

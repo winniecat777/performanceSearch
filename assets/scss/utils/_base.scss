@@ -58,6 +58,18 @@ $theme-colors: (
   "black":      $black,
 );
 
+// scss-docs-start nav-variables
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                1rem !default;
+$nav-link-font-size:                null !default;
+$nav-link-font-weight:              null !default;
+$nav-link-color:                    $black;
+$nav-link-hover-color:              $primary;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+// scss-docs-end nav-variables
+
 //spacer
 //之後要刪掉
 $spacer: 1rem !default;

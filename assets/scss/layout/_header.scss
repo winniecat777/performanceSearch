@@ -1,40 +1,50 @@
-
+nav,
 header,
-.logoPixel,
-.logoFont{
-  height: 90px;
+.navbar-btn{
+  height: 88px;
+  @include mobile{
+    height: 72px;    
+  }
 }
+
 // logo
 .logoPixel,
 .logoFont{
   vertical-align: middle;
 }
 .logoPixel{
-  img{
-      width: auto;
-      height: 56px;
-  }
+  width: auto;
+  height: 56px; 
+  @include mobile{
+    height: 38px;    
+  } 
 }
 .logoFont{
-  img{
-      width: auto;
-      height: 52px;
-  }
+  width: auto;
+  height: 52px; 
+  @include mobile{
+    height: 38px;    
+  } 
 }
 
 // nav
 nav a{    
-  height: 90px;
-  line-height: 90px;
+  // height: 90px;
+  color: $dark;
+  // line-height: 90px;
+  outline: none;
+  &:hover{
+      color:$primary;
+  }
+  
 }
-// nav a{    
-//   height: 90px;
-//   color: $dark;
-//   line-height: 90px;
-//   &:hover{
-//       color:$primary;
-//   }
-// }
+//toggle
+.navbar-toggler{
+  border: 0 0 0 1px;
+  border-radius: 0;  
+  // background: $dark;
+}
+
 
 .material-symbols-outlined {  
   font-variation-settings:

@@ -1091,8 +1091,10 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+// $nav-link-color:                    var(--#{$prefix}link-color) !default;
+// $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-color:                    $black !default; //*custom
+$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default; //*custom
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 

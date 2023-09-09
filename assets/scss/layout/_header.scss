@@ -6,13 +6,13 @@ header,
     height: 72px;    
   }
 }
-a.nav-item,
-a.navbar-btn{
-  color: $dark !important;
-  &:hover{
-    color: $primary !important;
-  }
-}
+// a.nav-item,
+// a.navbar-btn{
+//   color: $dark !important;
+//   &:hover{
+//     color: $primary !important;
+//   }
+// }
 
 // logo
 .logoPixel,
@@ -35,16 +35,16 @@ a.navbar-btn{
 }
 
 // nav
-nav a{    
-  // height: 90px;
-  color: $dark;
-  // line-height: 90px;
-  outline: none;
-  &:hover{
-      color:$primary;
-  }
+// nav a{    
+//   // height: 90px;
+//   color: $dark;
+//   // line-height: 90px;
+//   outline: none;
+//   &:hover{
+//       color:$primary;
+//   }
   
-}
+// }
 //toggle
 .navbar-toggler{
   height: 88px;

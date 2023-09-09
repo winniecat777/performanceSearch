@@ -9,15 +9,11 @@ a{
 
 img{
     max-width: 100%;
+    height: auto;
     vertical-align: middle;
+    object-fit: cover;
 }
 
-//container、格線設定
-$container-max-widths: (
-  xxl: 1434px
-);
-
-$grid-gutter-width:  1.875rem;
 
 //body 中間 wrap 的 width、border 設定
 .wrap{
@@ -34,6 +30,7 @@ $dash-color: #D4F4F2;
 $background: #FFFFFF;
 
 .dashed-bg {
+  padding: 86px 0;
   background-color: $background;
   background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
   background-image:
@@ -44,6 +41,7 @@ $background: #FFFFFF;
 }
 
 //color
+//之後要刪掉
 $primary:       #B0CD8E;
 $secondary:     #F6CD86;
 $accent:        #FF9FA6;
@@ -61,6 +59,7 @@ $theme-colors: (
 );
 
 //spacer
+//之後要刪掉
 $spacer: 1rem !default;
 $spacers: (
   0: 0,

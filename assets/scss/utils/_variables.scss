@@ -46,6 +46,7 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+$theme-green: #B0CD8E !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -298,26 +299,35 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+// $primary:       $blue !default;
+$primary:       #B0CD8E !default;  // *custom
+// $secondary:     $gray-600 !default;
+$secondary:     #F6CD86 !default; // *custom
+$accent:        #FF9FA6 !default; // *custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+// $light:         $gray-100 !default;
+$light:         #ECECEC !default; // *custom
+$dark:          #413A38 !default; // *custom
+$white:         #FFFFFF !default; // *custom
+$black:         #000000 !default; // *custom
+// $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "accent":     $accent, // *custom
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "black":      $black, // *custom
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -371,10 +381,10 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
-$spacers: (
+$spacer: 1rem !default; 
+$spacers: (               
   0: 0,
-  1: $spacer * .25, //4px
+  1: $spacer * .25, //4px  // *custom
   2: $spacer * .5,  //8px
   3: $spacer * .75, //12px
   4: $spacer,       //16px
@@ -419,10 +429,13 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
-$link-decoration:                         none !default;    //原為 underline
+// $link-color:                              $primary !default;
+$link-color:                              $dark !default; //custom
+// $link-decoration:                         underline !default;
+$link-decoration:                         none !default; // *custom
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        shift-color($primary, $link-shade-percentage) !default; //custom
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -432,8 +445,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
-
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0rem !default; // *custom
 
 // Grid breakpoints
 //
@@ -465,7 +478,8 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  // xxl: 1320px
+  xxl: 1434px //*custom
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -477,7 +491,8 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+// $grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.875rem !default;
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -579,7 +594,8 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default; // *custom
+// $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
@@ -599,11 +615,13 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      $spacer * 0 !default; // *custom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+// $headings-line-height:        1.2 !default;
+$headings-line-height:           1.5 !default; // *custom
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
@@ -1114,8 +1132,10 @@ $navbar-toggler-border-radius:      $btn-border-radius !default;
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-light-color:                rgba($black, .55) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
+// $navbar-light-color:                rgba($black, .55) !default;
+$navbar-light-color:                rgba($dark, 0) !default; //custom
+// $navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-hover-color:          rgba($primary, 0) !default; //custom
 $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;

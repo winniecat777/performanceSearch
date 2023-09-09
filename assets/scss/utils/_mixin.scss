@@ -3,3 +3,40 @@
       @content;
     }
 }
+
+@mixin button-sm {
+  background-color: gray;
+  padding: 10px;
+}
+@mixin button-lg {
+  background-color: gray;
+  border: 1px solid #000;
+}
+
+// @mixin title {
+//   font-size: 48px;
+//   border: 2px solid #CEDA79;
+//   font-family: "Microsoft JhengHei";
+//   font-weight: bold;
+//   display: inline-block;
+//   padding: 20px;
+//   letter-spacing: 0;
+//   border: 2px solid #fff;
+// }
+// .title {
+//   @include title;
+//   &-dark {
+//     color: #000;
+//     letter-spacing: 0;
+//     border: 2px solid #fff;
+//     display: inline-block;
+//     background-color: #fff;
+//     padding: 20px;
+//   }
+//   &-light {
+//     color: #fff;
+//     background-color: #B0CD8E;
+//     padding: 20px;
+//     border: 2px solid #fff;
+//   }
+// }

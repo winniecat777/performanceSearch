@@ -156,6 +156,10 @@ html {
 }
 .find{
   width: 97%;
+  background-image: url(/assets/images/index_mobile03.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   h2{
     background: #B0CD8E;
     color: #fff;
@@ -189,11 +193,7 @@ html {
   }
 }
 
-.findCourse{
-  background-image: url(/assets/images/index_mobile03.png);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+.findCourse{ 
   .frame {
     background-color: transparent;
     border-radius: 3px;

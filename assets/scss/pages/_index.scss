@@ -160,7 +160,7 @@ html {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  h2{
+  &-h2{
     background: #B0CD8E;
     color: #fff;
     display: inline-block;
@@ -168,7 +168,7 @@ html {
     border: 2px solid #CEDA79;
     font-weight: bold;
   }
-  span{
+  &-span{
     padding: 20px;
     color: #000;  
     letter-spacing: 0px;

@@ -13,6 +13,10 @@ a.navbar-btn{
     color: $primary !important;
   }
 }
+.navbar-btn{
+  width: 50%;
+  text-align: center;
+}
 
 // logo
 .logoPixel,
@@ -42,15 +46,25 @@ nav a{
   outline: none;
   &:hover{
       color:$primary;
-  }
-  
+  }  
 }
+.nav-item{
+  @include mobile{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 //toggle
 .navbar-toggler{
   height: 88px;
   border: 0 0 0 1px;
   border-radius: 0;  
   // background: $dark;
+  @include mobile{
+    height: 72px;
+  }
 }
 .navbar-collapse{
   z-index: 9;

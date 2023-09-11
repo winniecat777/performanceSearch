@@ -20,15 +20,13 @@
       }
       a {
         position: relative;
-        margin: 0 auto;
-        text-transform: uppercase;
         color: #fff;
-        text-decoration: none;
         padding-bottom: 3px;
         border-radius: 5px;
         box-shadow: 0 2px 0 #000;
         transition: padding 0.1s, box-shadow 0.1s, top 0.1s;  
-         overflow: hidden;
+        overflow: hidden;
+        z-index: 1;
       }
       
       a:after{
@@ -40,7 +38,6 @@
         left: -50%;
         z-index: -1;
         transform: rotate(81deg);
-        background-repeat: repeat;
-        background-image: url('/assets/images/back-slash.png');
+        background-image: url("/assets/images/index_mobile03.png");
       }
 }

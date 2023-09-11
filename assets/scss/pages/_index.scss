@@ -250,10 +250,9 @@ html {
       left: 0;
       transform: translateY(-50%);
       text-align: center;
-      
-      img{
-        max-height: 280px;
-      }
+    }
+    &-img{
+      max-height: 280px;
     }
     &-span{
       max-width: 60px;

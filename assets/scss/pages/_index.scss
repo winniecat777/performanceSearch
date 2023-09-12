@@ -2,6 +2,10 @@ html {
   overflow-x: hidden
 }
 
+main{
+  min-height: 70vh;
+}
+
 
 // section 1 
 .section-warpper {
@@ -150,7 +154,7 @@ html {
   }
 }
 
-
+// 找課程 
 .bg-space{
   width: 3%;
 }
@@ -267,16 +271,7 @@ html {
       color: #000;
     } 
   }
-    // &:hover {
-    //   .card {
-    //     transform: rotateY(20deg) skewY(-3deg)
-    //   }
-    //   transform: 
-    //   rotateY(-20deg) skewY(3deg)
-    // }
+
   
 
 
-main{
-  min-height: 70vh;
-}

@@ -270,8 +270,21 @@ main{
     } 
   }
 
-  //function
+  //introduce
+.introduce{
+  &-bgtop{
+      height: 66px;
+      background-size:  cover;
+      background-image: url(/assets/images/hilight-bgtop1.png);
+      background-repeat: repeat;
+      background-position: top;
+      overflow: hidden;
+  }
 
+  &-card{
+    border: 1px dashed $primary;
+  }
+}
   
 
 

@@ -52,16 +52,6 @@ a.navbar-btn{
   }
 }
 
-// nav
-nav a{    
-  // height: 90px;
-  color: $dark;
-  // line-height: 90px;
-  outline: none;
-  &:hover{
-      color:$primary;
-  }  
-}
 .navbar-nav{
   border-top: .5px solid $black;
   @include media-breakpoint-up(md){
@@ -83,8 +73,7 @@ nav a{
 .navbar-toggler{
   height: 88px;
   border: 0 0 0 1px;
-  border-radius: 0;  
-  // background: $dark;
+  border-radius: 0;    
   @include mobile{
     height: 72px;
   }

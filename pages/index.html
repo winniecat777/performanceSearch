@@ -10,8 +10,9 @@
   </head>
   
 <body>
+  <%- include('./layout/header'); -%> 
   <div class="wrapper block-border">
-  <%- include('./layout/header'); -%>      
+       
 
   <main>
       <!-- section 1  -->
@@ -34,7 +35,7 @@
         </div>
       </div>
       <div class="title-bg">
-        <img src="../../assets/images/titile-bg-news.png" alt="">
+        <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/titile-bg-news.png" alt="">
         <h2 class="title">熱門演出</h2>
       </div>
     </div>
@@ -63,7 +64,7 @@
           <li class="page-item"><a class="page-link" href="#">7</a></li>
         </ul>
       </div>
-      <img class="banner-img" src="../../assets/images/Rectangle.png" alt="">
+      <img class="banner-img" src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
       <div class="banner-bg"></div>
     </div>
     
@@ -71,51 +72,169 @@
 
   </section>
   <!-- end section 1  -->
-    
-    
-    
-    <div class="d-flex">
-      <div class="bg-space"><a class="d-block"></a></div>
-      <div class="findCourse bg-primary">
-        <div class="pt-6 mb-6 d-flex align-items-center">
-          <h2><span>找</span><span>課</span><span>程</span></h2>
-          <img src="../assets/images/h2-bg-side.png" alt="h2-bg-side">
-        </div>
-        <div class="container">
-          <ul class="row list-unstyled mb-0">
-            <li class="col-3">
-              <div class="frame">
-                <div class="card">
-                  <div class="text">
-                    <h5>Quote the day</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                  </div>
-                  <div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="col-3">
-              <div class="card">
-                <div class="text">
-                  <h5>Quote the day</h5>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                </div>
-                <div>
-                </div>
-              </div>
+
+  <section class="d-flex">
+    <div class="bg-space"><a href="" class="d-block"></a></div>
+    <div>
+      <h2><span>找</span><span>表</span><span>演</span></h2>
+      <div class="container bg-primary">
+        <div class="row">
+          <div class="col-3 position-relative border">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
+            <button class="position-absolute top-50 end-0 button-sm">分類</button>
+            <div>
+              <p>真善美藝術表演中心</p>
+              <h3>狼與彼得 TASO互動式親子音樂會</h3>
+              <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
             </div>
-            </li>
-            <li class="col-3"></li>
-            <li class="col-3"></li>
-          </ul>
+          </div>
+          <div class="col-3 position-relative border">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
+            <button class="position-absolute top-50 end-0">分類</button>
+            <div>
+              <p>真善美藝術表演中心</p>
+              <h3>狼與彼得 TASO互動式親子音樂會</h3>
+              <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+            </div>
+          </div>
+          <div class="col-3 position-relative border">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
+            <button class="position-absolute top-50 end-0">分類</button>
+            <div>
+              <p>真善美藝術表演中心</p>
+              <h3>狼與彼得 TASO互動式親子音樂會</h3>
+              <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+            </div>
+          </div>
+          <div class="col-3 position-relative border">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
+            <button class="position-absolute top-50 end-0">分類</button>
+            <div>
+              <p>真善美藝術表演中心</p>
+              <h3>狼與彼得 TASO互動式親子音樂會</h3>
+              <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+    <!-- 找課程 -->
+    <section class="d-flex">
+      <div class="bg-space"><a class="d-block"></a></div>
+      <div class="find bg-primary">
+        <div class="pt-6 mb-9 d-flex align-items-center">
+          <h2 class="find-h2"><span class="find-span">找</span><span class="find-span">課</span><span class="find-span">程</span></h2>
+          <img src="../assets/images/h2-bg-side.png" alt="h2-bg-side">
+        </div>
+        <div class="container findCourse">
+          <ul class="row list-unstyled mx-15 mb-10 pt-5 d-flex justify-content-center">
+            <li class="col-3">
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course01.jpeg" alt="course01">
+                      <span class="frame-span position-absolute top-50">珠寶</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-3">
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course04.jpeg" alt="course04">
+                      <span class="frame-span position-absolute top-50">手工</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-3">
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course07.jpeg" alt="course07">
+                      <span class="frame-span position-absolute top-50">手工</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-3">
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course04.jpeg" alt="course04">
+                      <span class="frame-span position-absolute top-50">手工</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sketchBtn fs-6 mb-12">
+          <a class="sketchBtn-link" href="courseInfo.html"><span class="sketchBtn-span">還有更多課程<img class="sketchBtn-img ms-3" src="/assets/images/arrow.png" alt="arrow.png"></span></a>      
+        </div>
+      </div>
+    </section>
+
+    <section class="introduce">
+      <div class="introduce-bgtop"></div>
+      <div class="container pt-13 pb-14">
+        <ul class="row d-flex justify-content-around">
+          <li class="introduce-card list-unstyled col-10 col-md-6 col-lg-3 py-10 px-12 text-center">
+            <img src="/assets/images/big-icon01.png" alt="big-icon01">
+            <p class="fs-3">多元搜尋</p>
+          </li>
+          <li class="introduce-card list-unstyled col-10 col-md-6 col-lg-3 py-10 px-12 text-center">
+            <img src="/assets/images/big-icon02.png" alt="big-icon02">
+            <p class="fs-3">清楚易懂的 <br>
+              場地資訊</p>
+          </li>
+          <li class="introduce-card list-unstyled col-10 col-md-6 col-lg-3 py-10 px-12 text-center">
+            <img src="/assets/images/big-icon03.png" alt="big-icon03">
+            <p class="fs-3">將喜歡的資訊 <br> 加入最愛</p>
+          </li>
+          <li class="introduce-card list-unstyled col-10 col-md-6 col-lg-3 py-10 px-12 text-center">
+            <img src="/assets/images/big-icon04.png" alt="big-icon04">
+            <p class="fs-3">評價分享</p>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <%- include('./layout/footer') -%>
   </div>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </body>
 </html>

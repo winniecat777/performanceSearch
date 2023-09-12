@@ -1,0 +1,17 @@
+//Dashed grid background
+$grid-size: 30px;
+$dash-length: 5px;
+$dash-width: 1px;
+$dash-color: #D4F4F2;
+$background: #FFFFFF;
+
+.dashed-bg {
+  padding: 86px 0;
+  background-color: $background;
+  background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
+  background-image:
+    linear-gradient(to bottom, transparent $dash-length, $background $dash-length),
+    linear-gradient(to right, $dash-color $dash-width, transparent $dash-width),
+    linear-gradient(to right, transparent $dash-length, $background $dash-length),
+    linear-gradient(to bottom, $dash-color $dash-width, transparent $dash-width);
+}

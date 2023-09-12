@@ -24,6 +24,7 @@ a.navbar-btn{
   }
 }
 
+
 // logo
 .logoPixel,
 .logoFont{
@@ -88,12 +89,14 @@ nav a{
     height: 72px;
   }
 }
+
 .navbar-collapse{
   z-index: 9;
   background: $white;
   box-sizing: border-box;
   border: 1px solid $black;
 }
+
 
 .material-symbols-outlined {  
   font-variation-settings:

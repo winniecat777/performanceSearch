@@ -10,8 +10,9 @@
   </head>
   
 <body>
+  <%- include('./layout/header'); -%> 
   <div class="wrapper block-border">
-  <%- include('./layout/header'); -%>      
+       
 
   <main>
       <!-- section 1  -->
@@ -34,7 +35,7 @@
         </div>
       </div>
       <div class="title-bg">
-        <img src="../../assets/images/titile-bg-news.png" alt="">
+        <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/titile-bg-news.png" alt="">
         <h2 class="title">熱門演出</h2>
       </div>
     </div>
@@ -63,7 +64,7 @@
           <li class="page-item"><a class="page-link" href="#">7</a></li>
         </ul>
       </div>
-      <img class="banner-img" src="../../assets/images/Rectangle.png" alt="">
+      <img class="banner-img" src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
       <div class="banner-bg"></div>
     </div>
     
@@ -71,43 +72,51 @@
 
   </section>
   <!-- end section 1  -->
+  <!-- 找表演 start-->
   <section class="d-flex">
     <div class="bg-space"><a href="" class="d-block"></a></div>
-    <div>
-      <h2><span>找</span><span>表</span><span>演</span></h2>
-      <div class="container bg-primary">
+    <div class="bg-primary">
+      <div class="d-flex align-items-center">
+        <h2 class="mt-6 mb-9 d-flex align-items-center find-border-yellow">
+          <span class="find-title find-dark find-border-white">找</span>
+          <span class="find-title find-light find-border-white border-end-0">表</span>
+          <span class="find-title find-light find-border-white border-start-0">演</span>
+        </h2>
+        <img src="../assets/images/h2-bg-side.png" alt="h2-bg-side">
+      </div>
+      <div class="container">
         <div class="row">
-          <div class="col-3 position-relative bodrder">
+          <div class="col-3 position-relative border">
             <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
             <button class="position-absolute top-50 end-0 button-sm">分類</button>
-            <div>
+            <div class="bg-white p-4">
               <p>真善美藝術表演中心</p>
               <h3>狼與彼得 TASO互動式親子音樂會</h3>
               <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
             </div>
           </div>
-          <div class="col-3 position-relative bodrder">
+          <div class="col-3 position-relative border">
             <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
             <button class="position-absolute top-50 end-0">分類</button>
-            <div>
+            <div class="bg-white p-4">
               <p>真善美藝術表演中心</p>
               <h3>狼與彼得 TASO互動式親子音樂會</h3>
               <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
             </div>
           </div>
-          <div class="col-3 position-relative bodrder">
+          <div class="col-3 position-relative border">
             <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
             <button class="position-absolute top-50 end-0">分類</button>
-            <div>
+            <div class="bg-white p-4">
               <p>真善美藝術表演中心</p>
               <h3>狼與彼得 TASO互動式親子音樂會</h3>
               <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
             </div>
           </div>
-          <div class="col-3 position-relative bodrder">
+          <div class="col-3 position-relative border">
             <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
             <button class="position-absolute top-50 end-0">分類</button>
-            <div>
+            <div class="bg-white p-4">
               <p>真善美藝術表演中心</p>
               <h3>狼與彼得 TASO互動式親子音樂會</h3>
               <p>音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
@@ -117,40 +126,101 @@
       </div>
     </div>
   </section>
-    <div class="d-flex">
+  <!-- 找表演 end -->
+    <!-- 找課程 -->
+    <section class="d-flex">
       <div class="bg-space"><a class="d-block"></a></div>
-      <div class="findCourse bg-primary">
-        <div class="pt-6 mb-6 d-flex align-items-center">
-          <h2><span>找</span><span>課</span><span>程</span></h2>
+      <div class="find bg-primary">
+        <div class="pt-6 mb-9 d-flex align-items-center">
+          <h2 class="find-h2"><span class="find-span">找</span><span class="find-span">課</span><span class="find-span">程</span></h2>
           <img src="../assets/images/h2-bg-side.png" alt="h2-bg-side">
         </div>
-        <div class="container">
-          <ul class="row list-unstyled mb-0">
+        <div class="container findCourse">
+          <ul class="row list-unstyled mx-15 mb-10 pt-5 d-flex justify-content-center">
             <li class="col-3">
               <div class="frame">
-                <div class="card">
-                  <div class="text">
-                    <h5>Quote the day</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                  </div>
-                  <div>
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course01.jpeg" alt="course01">
+                      <span class="frame-span position-absolute top-50">珠寶</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </li>
             <li class="col-3">
-              
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course04.jpeg" alt="course04">
+                      <span class="frame-span position-absolute top-50">手工</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="col-3"></li>
-            <li class="col-3"></li>
+            <li class="col-3">
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course07.jpeg" alt="course07">
+                      <span class="frame-span position-absolute top-50">手工</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-3">
+              <div class="frame">
+                <div class="frame-card position-relative">
+                  <div class="frame-content ">
+                    <a class="frame-link" href="courseInfo.html d-flex flex-column">
+                      <img class="frame-img" src="../assets/images/course04.jpeg" alt="course04">
+                      <span class="frame-span position-absolute top-50">手工</span>
+                      <div class="bg-white p-5 text-start">
+                        <p class="mb-2">真善美藝術表演中心</p>
+                        <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                        <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
+        <div class="sketchBtn fs-6 mb-12">
+          <a class="sketchBtn-link" href="courseInfo.html"><span class="sketchBtn-span">還有更多課程<img class="sketchBtn-img ms-3" src="/assets/images/arrow.png" alt="arrow.png"></span></a>      
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="function">
+      <img class="mb-13" src="/assets/images/hilight-bgtop 1.png" alt="hilight-bgtop 1">
+    </section>
   </main>
 
   <%- include('./layout/footer') -%>
   </div>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </body>
 </html>

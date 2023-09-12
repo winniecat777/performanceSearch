@@ -22,23 +22,7 @@ img{
   border-right: 1px solid #000000;
 }
 
-//Dashed grid background
-$grid-size: 30px;
-$dash-length: 5px;
-$dash-width: 1px;
-$dash-color: #D4F4F2;
-$background: #FFFFFF;
 
-.dashed-bg {
-  padding: 86px 0;
-  background-color: $background;
-  background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
-  background-image:
-    linear-gradient(to bottom, transparent $dash-length, $background $dash-length),
-    linear-gradient(to right, $dash-color $dash-width, transparent $dash-width),
-    linear-gradient(to right, transparent $dash-length, $background $dash-length),
-    linear-gradient(to bottom, $dash-color $dash-width, transparent $dash-width);
-}
 
 //color
 //之後要刪掉
@@ -84,6 +68,11 @@ $spacers: (
   7: $spacer * 2,   //32px
   8: $spacer * 2.5, //40px
   9: $spacer * 3,   //48px
+  10: $spacer * 3.375, //54px
+  11: $spacer * 3.625, //58px
+  12: $spacer * 3.75,  //60px
+  13: $spacer * 5,     //80px
+  14: $spacer * 6.25,  //100px
 ) !default;
 
 //ol,ul reset

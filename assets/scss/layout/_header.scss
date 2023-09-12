@@ -1,18 +1,29 @@
-nav,
-header,
-.navbar-btn{
+nav{
   height: 88px;
   @include mobile{
     height: 72px;    
   }
 }
-// a.nav-item,
-// a.navbar-btn{
-//   color: $dark !important;
-//   &:hover{
-//     color: $primary !important;
-//   }
-// }
+
+.navbar-btn{
+  height: 64px;  
+  border-left: 1px solid $white;    
+  @include media-breakpoint-up(md){
+    width: 50%;  
+    height: 88px;
+    text-align: center;
+    border-left: 1px solid $black;
+  }
+}
+
+a.nav-item,
+a.navbar-btn{
+  color: $dark !important;
+  &:hover{
+    color: $primary !important;
+  }
+}
+
 
 // logo
 .logoPixel,
@@ -33,28 +44,59 @@ header,
     height: 38px;    
   } 
 }
+.navbar-brand .block-border-left{
+  border: 0;
+  padding: 0;
+  @include media-breakpoint-up(md){
+    border-left: 1px solid $black;
+  }
+}
 
 // nav
-// nav a{    
-//   // height: 90px;
-//   color: $dark;
-//   // line-height: 90px;
-//   outline: none;
-//   &:hover{
-//       color:$primary;
-//   }
-  
-// }
+nav a{    
+  // height: 90px;
+  color: $dark;
+  // line-height: 90px;
+  outline: none;
+  &:hover{
+      color:$primary;
+  }  
+}
+.navbar-nav{
+  border-top: .5px solid $black;
+  @include media-breakpoint-up(md){
+  border-top: .5px solid $white;
+  }
+}
+.nav-item{  
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid $black;
+  @include media-breakpoint-up(md){
+    width: auto;
+    border: 1px solid $white;
+  }
+}
+
+
 //toggle
 .navbar-toggler{
   height: 88px;
   border: 0 0 0 1px;
   border-radius: 0;  
   // background: $dark;
+  @include mobile{
+    height: 72px;
+  }
 }
-// .navbar-collapse{
-//   z-index: 9;
-// }
+
+.navbar-collapse{
+  z-index: 9;
+  background: $white;
+  box-sizing: border-box;
+  border: 1px solid $black;
+}
+
 
 .material-symbols-outlined {  
   font-variation-settings:

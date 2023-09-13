@@ -5,7 +5,7 @@ let mybutton = document.getElementById("totop");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  console.log("scrollFunction")
+  console.log("scrollFunction");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {

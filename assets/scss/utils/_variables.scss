@@ -675,7 +675,8 @@ $hr-height:                   null !default; // Deprecated in v5.2.0
 
 $hr-border-color:             null !default; // Allows for inherited colors
 $hr-border-width:             $border-width !default;
-$hr-opacity:                  .25 !default;
+// $hr-opacity:                  .25 !default;
+$hr-opacity:                  1 !default;//custom
 
 $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;

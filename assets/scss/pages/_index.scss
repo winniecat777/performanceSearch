@@ -153,6 +153,20 @@ main{
     }
   }
 }
+// dot-bg
+.bg-dot {
+  height: 58px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.9 22.9' style='enable-background:new 0 0 22.9 22.9;' xml:space='preserve'%3E%3Ccircle fill='rgb(176 205 142)' cx='5.7' cy='5.9' r='3'/%3E%3Ccircle fill='rgb(176 205 142)' cx='17.2' cy='17.2' r='3'/%3E%3C/svg%3E%0A");
+  background-size: 20px;
+  background-color: #fff;
+}
+hr {
+  position: absolute;
+  top: 29px;
+  border-top: 1px solid $primary;
+  width: 100%;
+  margin: 0;
+}
 
 // 找課程 
 .bg-space{

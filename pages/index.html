@@ -7,6 +7,8 @@
     <title>首頁- 藝吧查表演</title>
     <!-- CSS Quote Box Hover Effects -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   
 <body>
@@ -140,8 +142,8 @@
           <img src="../assets/images/h2-bg-side.png" alt="h2-bg-side">
         </div>
         <div class="container findCourse">
-          <ul class="row list-unstyled mx-15 mb-10 pt-5 d-flex justify-content-center">
-            <li class="col-3">
+          <ul class="row list-unstyled mx-15 mb-10 pt-5 d-none d-lg-flex justify-content-center">
+            <li class="col-lg-6 col-xxl-3 mb-6">
               <div class="frame">
                 <div class="frame-card position-relative">
                   <div class="frame-content ">
@@ -158,7 +160,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-6 col-xxl-3 mb-6">
               <div class="frame">
                 <div class="frame-card position-relative">
                   <div class="frame-content ">
@@ -175,7 +177,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-6 col-xxl-3 mb-6">
               <div class="frame">
                 <div class="frame-card position-relative">
                   <div class="frame-content ">
@@ -192,7 +194,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-6 col-xxl-3">
               <div class="frame">
                 <div class="frame-card position-relative">
                   <div class="frame-content ">
@@ -210,6 +212,63 @@
               </div>
             </li>
           </ul>
+          <div #swiperRef="" class="swiper swiperCourse">
+            <div class="swiper-wrapper d-flex d-lg-none">
+              <div class="swiper-slide">
+                <div class="swiperCourse-card position-relative">
+                  <a class="swiperCourse-link" href="courseInfo.html">
+                    <img class="swiperCourse-img" src="../assets/images/course01.jpeg" alt="course01">
+                    <span class="position-absolute top-50 swiperCourse-span">珠寶</span>
+                    <div class="bg-white p-5 text-start">
+                      <p class="mb-2">真善美藝術表演中心</p>
+                      <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                      <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperCourse-card position-relative">
+                  <a class="swiperCourse-link" href="courseInfo.html">
+                    <img class="swiperCourse-img" src="../assets/images/course04.jpeg" alt="course04">
+                    <span class="position-absolute top-50 swiperCourse-span">珠寶</span>
+                    <div class="bg-white p-5 text-start">
+                      <p class="mb-2">真善美藝術表演中心</p>
+                      <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                      <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperCourse-card position-relative">
+                  <a class="swiperCourse-link" href="courseInfo.html">
+                    <img class="swiperCourse-img" src="../assets/images/course07.jpeg" alt="course07">
+                    <span class="position-absolute top-50 swiperCourse-span">珠寶</span>
+                    <div class="bg-white p-5 text-start">
+                      <p class="mb-2">真善美藝術表演中心</p>
+                      <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                      <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperCourse-card position-relative">
+                  <a class="swiperCourse-link" href="courseInfo.html">
+                    <img class="swiperCourse-img" src="../assets/images/course04.jpeg" alt="course04">
+                    <span class="position-absolute top-50 swiperCourse-span">珠寶</span>
+                    <div class="bg-white p-5 text-start">
+                      <p class="mb-2">真善美藝術表演中心</p>
+                      <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
+                      <p class="fs-8">音樂X戲劇X互動演出<br>經典作品神反轉！<br>一起來段意想不到的音樂冒險</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
         <div class="sketchBtn fs-6 mb-12">
           <a class="sketchBtn-link" href="courseInfo.html"><button type="button" class="sketchBtn-btn">還有更多課程<img class="sketchBtn-img ms-3" src="/assets/images/arrow.png" alt="arrow.png"></button></a>
@@ -254,5 +313,22 @@
   </div>
     <script type="module" src="../main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiperCourse", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    
   </body>
 </html>

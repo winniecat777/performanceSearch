@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <div>
-      <div class="container dashed-bg">
-        <%- include('./layout/bannerSwiper') -%>
+  <div class="wrapper block-border">
+  <%- include('./layout/header'); -%>
+    <div class="dashed-bg">
+    <%- include('./layout/bannerSwiper') -%>
+      <div class="container">
         <div class="nav">
           <a class="px-5 fs-5" href="index.html">首頁</a><span class="fs-5">></span><a class="px-5 fs-5" href="activityInfo.html">活動資訊</a>
         </div>
@@ -29,6 +29,7 @@
     <%- include('./layout/footer'); -%>
 
     <%- include('./layout/toTop-btn') -%>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
 

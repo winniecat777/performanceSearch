@@ -340,8 +340,8 @@ main{
   .swiper-pagination-bullet-active{
     background-color: $secondary;
   }
-  .swiper-pagination-horizontal{
-    bottom: 0;
+  .swiper-horizontal,.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction{
+    bottom: 0; 
   }
 
   //introduce

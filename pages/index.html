@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首頁- 藝吧查表演</title>
-    <!-- CSS Quote Box Hover Effects -->
+    <!-- CSS Quote Box Hover Effects .frame -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   
 <body>
-  <%- include('./layout/toTop-btn') -%>
   <div class="wrapper block-border">
     <%- include('./layout/header'); -%>     
 
@@ -89,7 +88,7 @@
       <div class="row row-cols-md-4 px-md-10 pt-10 mb-10">
         <div class="col">
           <div class="card border no-border-radius">
-            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="" class="card-img-top img-fluid">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/index.banner.png?raw=true" alt="" class="card-img-top">
             <div class="card-body position-relative">
               <p class="card-text mb-2">真善美藝術表演中心</p>
               <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
@@ -100,7 +99,7 @@
         </div>
         <div class="col">
           <div class="card border no-border-radius">
-            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="" class="card-img-top img-fluid">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/index.banner.png?raw=true" alt="" class="card-img-top img-fluid">
             <div class="card-body position-relative">
               <p class="card-text mb-2">真善美藝術表演中心</p>
               <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
@@ -111,7 +110,7 @@
         </div>
         <div class="col">
           <div class="card border no-border-radius">
-            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="" class="card-img-top">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/index.banner.png?raw=true" alt="" class="card-img-top">
             <div class="card-body position-relative">
               <p class="card-text mb-2">真善美藝術表演中心</p>
               <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
@@ -122,7 +121,7 @@
         </div>
         <div class="col">
           <div class="card border no-border-radius">
-            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="" class="card-img-top">
+            <img src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/index.banner.png?raw=true" alt="" class="card-img-top">
             <div class="card-body position-relative">
               <p class="card-text mb-2">真善美藝術表演中心</p>
               <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
@@ -323,26 +322,12 @@
   <%- include('./layout/footer') -%>
   </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- toTop-btn.js -->
-    <script src="../toTop-btn.js"></script>
-
-    <script type="module" src="../main.js"></script>
+  <%- include('./layout/toTop-btn') -%>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
      <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".swiperCourse", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>  
+  <script type="module" src="../main.js"></script>
   </body>
 </html>

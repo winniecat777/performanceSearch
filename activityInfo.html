@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <script type="module" crossorigin src="/performanceSearch/assets/main-e599a922.js"></script>
-    <link rel="stylesheet" href="/performanceSearch/assets/main-61aaad6a.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script type="module" crossorigin src="/performanceSearch/assets/main-7bb30b89.js"></script>
+    <link rel="stylesheet" href="/performanceSearch/assets/main-d5d5a173.css">
   </head>
   <body>
     
@@ -57,11 +59,26 @@
 </header>
 
 
-    
 
-    <button onclick="topFunction()" id="totop" title="Go to top"><span class="material-symbols-outlined north-icon">
-    north
-    </span></button>    <footer class="block-border-top">
+    <div>
+      <div class="container dashed-bg">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="..." class="d-block w-100" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="..." class="d-block w-100" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="..." class="d-block w-100" alt="...">
+	  </div>
+	</div>
+  </div>
+      </div>
+    </div>
+    
+    <footer class="block-border-top">
 <div class="container">
 <div class="row py-7">
     <div class="col-md-2 col-sm-6 text-center">
@@ -123,10 +140,14 @@
     </div>
 </div>
 </footer>
-    
+    <button onclick="topFunction()" id="totop" title="Go to top"><span class="material-symbols-outlined north-icon">
+    north
+    </span></button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
 
-    <!-- toTop-btn.js -->
-  <script src="../toTop-btn.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    
   </body>
 </html>

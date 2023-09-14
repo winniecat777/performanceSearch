@@ -4,8 +4,8 @@
     }
 }
 
-@mixin button-sm {
-  background-color: gray;
+@mixin button-gray {
+  background-color: #D9D9D9;
   padding: 10px;
 }
 @mixin button-lg {
@@ -14,11 +14,16 @@
 }
 
 @mixin find-title {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
   padding: 20px;
   letter-spacing: 0;
 }
+
+.button-gray {
+  @include button-gray;
+}
+
 .find {
   &-title {
     @include find-title;
@@ -37,4 +42,7 @@
     color: #fff;
     background-color: #b0cd8e;
   }
+}
+.no-border-radius {
+  border-radius: 0;
 }

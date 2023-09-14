@@ -3,6 +3,19 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 console.log("Hello world!");
 
+
+// Initialize Swiper
+var swiper = new Swiper(".swiperCourse", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
 // toTop-btn.js
 // Get the button:
 let mybutton = document.getElementById("totop");

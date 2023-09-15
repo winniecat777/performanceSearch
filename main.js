@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 console.log("Hello world!");
 
 
-// Initialize Swiper
+// Initialize Swiper card
 var swiper = new Swiper(".swiperCourse", {
     slidesPerView: "auto",
     centeredSlides: true,

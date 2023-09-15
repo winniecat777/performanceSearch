@@ -9,19 +9,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
+    <div class="wrapper block-border">
     <%- include('./layout/header'); -%>
-
-    <div>
-      <div class="container dashed-bg">
-        <%- include('./layout/bannerSwiper') -%>
-
+      <div class="dashed-bg">
+      <%- include('./layout/bannerSwiper') -%>
+        <div class="container">
+          <div class="row justify-content-center py-7 mb-12">
+            <h2 class="col-8 fs-1 fw-normal text-center mb-7">關於網站</h2>   
+            <h3 class="col-8 fs-2 fw-normal mb-6">網站開發理念及目的</h3>
+            <p class="col-8 fs-6 ti-2 mb-4">本專題緣起於台中表演藝術指南針的 LINE 社群， 然而近期管理團隊飽受廣告帳號騷擾社群之苦，原有一派熱心卻因繁瑣的管理工作弄得身心俱疲，希望能藉由這次專題機會實驗將此社群平台做成網站的可行性，讓管理者能更方便經營，也能讓更多表演團體和觀眾能方便應用查詢，看見台灣表演藝術的活力。</p>
+            <p class="col-8 fs-6 ti-2">目前參照原 LINE 社群之規範，暫以台中的表演查詢為主，將來若網站開發順利，再考慮加入其他縣市的演出資訊、或其他更方便的功能。</p>
+         </div>
+         <div>
+          <h2 class="fs-1 fw-normal text-center mb-7">網站開發團隊</h2> 
+          <ul class="dev row d-flex justify-content-center mb-12 mx-auto mw-40">
+            <li class="col-6 col-md-6 col-lg-3 mb-5 list-unstyled">
+              <div class="card dev-card text-center py-7">
+                <img class="dev-img mb-4" src="/assets/images/avatar01.png" alt="avatar01">
+                <p class="fs-5">豪豪</p>
+              </div> 
+            </li>
+            <li class="col-6 col-md-6 col-lg-3 mb-5 list-unstyled">
+              <div class="card dev-card text-center py-7">
+                <img class="dev-img mb-4" src="/assets/images/avatar02.png" alt="avatar02">
+                <p class="fs-5">Winnie</p>
+              </div> 
+            </li>
+            <li class="col-6 col-md-6 col-lg-3 mb-5 list-unstyled">
+              <div class="card dev-card text-center py-7">
+                <img class="dev-img mb-4" src="/assets/images/avatar03.png" alt="avatar03">
+                <p class="fs-5">ztion</p>
+              </div> 
+            </li>
+            <li class="col-6 col-md-6 col-lg-3 list-unstyled">
+              <div class="card dev-card text-center py-7">
+                <img class="dev-img mb-4" src="/assets/images/avatar04.png" alt="avatar04">
+                <p class="fs-5">Rxzan</p>
+              </div> 
+            </li>
+          </ul>
+         </div>
+         <div class="container row justify-content-center pb-14">
+          <h2 class="fs-1 fw-normal text-center mb-7">網站前身(原社群)介紹</h2>
+          <p class="col-8 fs-6 ti-2 mb-4">LINE 群「台中表演藝術指南針 ☆ (演出資訊、表演課程、活動分享)」是一個限定區域在台中，會定期分享表演藝術資訊、招募成員和體驗課程的平台。</p>
+        </div>
+        </div>
       </div>
-    </div>
-    
     <%- include('./layout/footer'); -%>
-
     <%- include('./layout/toTop-btn') -%>
-
+    </div>    
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
 
     <!-- Swiper JS -->

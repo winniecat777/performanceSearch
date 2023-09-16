@@ -6,7 +6,7 @@ $dash-color: #D4F4F2;
 $background: #FFFFFF;
 
 .dashed-bg {
-  padding: 0;
+  padding: 25px 0px;
   background-color: $background;
   background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
   background-image:

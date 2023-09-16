@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <title>活動資訊- 藝吧查表演</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
@@ -17,11 +17,179 @@
         <div class="nav mt-10">
           <a class="px-5 fs-5" href="index.html">首頁</a><span class="fs-5">></span><a class="px-5 fs-5" href="activityInfo.html">活動資訊</a>
         </div>
-        <div class="row">
+        <div class="row mt-7">
           <div class="col-3">
-            <h4>篩選條件</h4>
+            <div class="bg-primary pt-5 px-10 pb-10">
+              <h2 class="text-center">篩選條件</h2>
+              <p class="fs-6">時間</p>
+              <div class="d-flex justify-content-between mt-4">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    年份
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">2021</a></li>
+                    <li><a class="dropdown-item" href="#">2022</a></li>
+                    <li><a class="dropdown-item" href="#">2023</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    月份
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">一月 January</a></li>
+                    <li><a class="dropdown-item" href="#">二月 February</a></li>
+                    <li><a class="dropdown-item" href="#">三月 March</a></li>
+                    <li><a class="dropdown-item" href="#">四月 April</a></li>
+                    <li><a class="dropdown-item" href="#">五月 May</a></li>
+                    <li><a class="dropdown-item" href="#">六月 June</a></li>
+                    <li><a class="dropdown-item" href="#">七月 July</a></li>
+                    <li><a class="dropdown-item" href="#">八月 August</a></li>
+                    <li><a class="dropdown-item" href="#">九月 October</a></li>
+                    <li><a class="dropdown-item" href="#">十月 November</a></li>
+                    <li><a class="dropdown-item" href="#">十一月 November</a></li>
+                    <li><a class="dropdown-item" href="#">十二月 December</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="fs-6 mt-4">地點 / 地區</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle mt-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  行政區
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="max-height: 200px; overflow-y: auto;" >
+                  <li><a class="dropdown-item" href="#">中區</a></li>
+                  <li><a class="dropdown-item" href="#">東區</a></li>
+                  <li><a class="dropdown-item" href="#">西區</a></li>
+                  <li><a class="dropdown-item" href="#">南區</a></li>
+                  <li><a class="dropdown-item" href="#">北區</a></li>
+                  <li><a class="dropdown-item" href="#">西屯區</a></li>
+                  <li><a class="dropdown-item" href="#">南屯區</a></li>
+                  <li><a class="dropdown-item" href="#">北屯區</a></li>
+                  <li><a class="dropdown-item" href="#">豐原區</a></li>
+                  <li><a class="dropdown-item" href="#">大里區</a></li>
+                  <li><a class="dropdown-item" href="#">太平區</a></li>
+                  <li><a class="dropdown-item" href="#">清水區</a></li>
+                  <li><a class="dropdown-item" href="#">沙鹿區</a></li>
+                  <li><a class="dropdown-item" href="#">大甲區</a></li>
+                  <li><a class="dropdown-item" href="#">東勢區</a></li>
+                  <li><a class="dropdown-item" href="#">梧棲區</a></li>
+                  <li><a class="dropdown-item" href="#">烏日區</a></li>
+                  <li><a class="dropdown-item" href="#">神岡區</a></li>
+                  <li><a class="dropdown-item" href="#">大肚區</a></li>
+                  <li><a class="dropdown-item" href="#">大雅區</a></li>
+                  <li><a class="dropdown-item" href="#">后里區</a></li>
+                  <li><a class="dropdown-item" href="#">霧峰區</a></li>
+                  <li><a class="dropdown-item" href="#">潭子區</a></li>
+                  <li><a class="dropdown-item" href="#">龍井區</a></li>
+                  <li><a class="dropdown-item" href="#">外埔區</a></li>
+                  <li><a class="dropdown-item" href="#">和平區</a></li>
+                  <li><a class="dropdown-item" href="#">石岡區</a></li>
+                  <li><a class="dropdown-item" href="#">大安區</a></li>
+                  <li><a class="dropdown-item" href="#">新社區</a></li>
+                </ul>
+              </div>
+              <p class="fs-6 mt-4">活動類別</p>
+              <div class="mt-4 d-flex justify-content-between">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="舞蹈" id="checkboxDance">
+                  <label class="form-check-label" for="checkboxDance">
+                    舞蹈
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="音樂" id="checkboxMusic">
+                  <label class="form-check-label" for="checkboxMusic">
+                    音樂
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="話劇" id="checkboxDrama">
+                  <label class="form-check-label" for="checkboxDrama">
+                    話劇
+                  </label>
+                </div>
+                
+              </div>
+            </div>
           </div>
-          <div class="col-9"></div>
+          <div class="row row-cols-xxl-3 col-md-9 col-lg-9 g-0 gap-0">
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+            <div class="card no-border-radius">
+              <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius">
+              <div class="card-body">
+                <p class="card-text">真善美藝術表演中心</p>
+                <h3 class="card-title">狼與彼得 TASO互動式親子音樂會</h3>
+                <p class="card-text">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

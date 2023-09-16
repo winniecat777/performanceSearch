@@ -10,119 +10,177 @@ main{
 // section 1 
 .section-warpper {
   position: relative;
-  
-  
-  .campass {
-    position: absolute;
-    top: 123px;
-    right: -6px;
-    transform: rotate(-5deg);
-  }
 
-  .input-outline {
-      position: relative;
-      width: 750px;
-      height: 119px;
-      margin: 0 auto;
-      margin-bottom: 40px;
-      border: 3px solid #ccc;
-      box-sizing: border-box;
+  .dashed-bg {
+    padding: 25px 0px;
+    background-color: $background;
+    background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
+    background-image:
+    linear-gradient(to bottom, transparent $dash-length, $background $dash-length),
+    linear-gradient(to right, $dash-color $dash-width, transparent $dash-width),
+    linear-gradient(to right, transparent $dash-length, $background $dash-length),
+    linear-gradient(to bottom, $dash-color $dash-width, transparent $dash-width);
 
-      .box {
-        width: 100%;
-        height: 100%;
-        border-top: 15px solid #F6CD86;
-        border-right: 15px solid #F6C063;
-        border-bottom: 15px solid #FFF;
-        border-left: 15px solid #EEE;
+    .campass {
+        position: absolute;
+        top: 123px;
+        right: -6px;
+        transform: rotate(-5deg);
+    }
+    
+    .input-outline {
+        position: relative;
+        width: 750px;
+        height: 119px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        border: 3px solid #ccc;
         box-sizing: border-box;
-        box-shadow: 0px 0px 0px 2px #888;
-
-        .input {
+    
+        .box {
           width: 100%;
           height: 100%;
-          border: 3px solid #888;
+          border-top: 15px solid #F6CD86;
+          border-right: 15px solid #F6C063;
+          border-bottom: 15px solid #FFF;
+          border-left: 15px solid #EEE;
           box-sizing: border-box;
-          background-color: $theme-green;
-        }
-
-        .input-inside {
-          position: absolute;
-          top: 14px;
-          left: 14px;
-          width: 715px;
-          height: 83px;
-          padding: 0 27px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          font-size: 23px;
-
-          &-left {
-            width: 87%;
+          box-shadow: 0px 0px 0px 2px #888;
+    
+          .input {
+            width: 100%;
+            height: 100%;
+            border: 3px solid #888;
+            box-sizing: border-box;
+            background-color: $theme-green;
+          }
+    
+          .input-inside {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            width: 715px;
+            height: 83px;
+            padding: 0 27px;
             display: flex;
             align-items: center;
-
-            .search-input {
-              outline: none;
-              width: 89%;
-              border-style: none;
-              background-color: $theme-green;
-
-              &::placeholder {
-                color: #000000;
-                font-size: 23px;
-                font-weight: 450;
-
-
+            justify-content: space-between;
+            font-size: 23px;
+    
+            &-left {
+              width: 87%;
+              display: flex;
+              align-items: center;
+    
+              .search-input {
+                outline: none;
+                width: 89%;
+                border-style: none;
+                background-color: $theme-green;
+    
+                &::placeholder {
+                  color: #000000;
+                  font-size: 23px;
+                  font-weight: 450;
+    
+    
+                }
               }
             }
-          }
-
-          button {
-            color: #000;
-            font-size: 23px;
-            font-weight: 450;
-            background-color: $theme-green;
-            padding: 5px 10px;
-            border-radius: 12px;
-            border: none;
-
-            &:hover {
-              background-color: #EEE;
+    
+            button {
+              color: #000;
+              font-size: 23px;
+              font-weight: 450;
+              background-color: $theme-green;
+              padding: 5px 10px;
+              border-radius: 12px;
+              border: none;
+    
+              &:hover {
+                background-color: #EEE;
+              }
             }
+    
+    
           }
-
-
+    
         }
-        
+    }
+    
+    .title-bg {
+      max-width: 40%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 25px 10px;
+      background-image: url(/assets/images/titile-bg-news.png);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+    
+      .title {
+        font-weight: 700;
+        font-size: 2.3rem;
+        letter-spacing: 19px;
+        padding-top: 26px;
       }
-  }
-
-  .title-bg {
-    max-width: 40%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 25px 10px;
-    background-image: url(/assets/images/titile-bg-news.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-
-    .title {
-      font-weight: 700;
-      font-size: 2.3rem;
-      letter-spacing: 19px;
-      padding-top: 26px;
+    
+    
     }
 
-    
-
   }
-
+  
+  
+ 
   // section 1 - banner
   .carousel {
       width: 96vw;
+
+      .deco-border {
+        border: 1px solid #fff;
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 350px;
+        height: 300px;
+
+      }
+
+        .carousel-indicators {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: -54px;
+          padding: 15px;
+          display: flex;
+          width: 350px;
+          border-top: 1px solid #000;
+          // background: rgba(255, 255, 255, .3);
+          background-color: #fff;
+          opacity: 0.7;
+
+          & [data-bs-target] {
+            width: 30px;
+            height: 40px;
+            text-indent: 0;
+            border: 1px solid #625B5A;
+            background-color: #fff;
+
+            &:hover {
+              color: #fff;
+              background-color: #625B5A;
+            }
+
+            &:focus {
+              color: #fff;
+              background-color: #625B5A;
+            }
+          }
+        }
+
+      }
   
       .carousel-inner {
         .carousel-item {
@@ -134,13 +192,35 @@ main{
             // height: 100vh;
             line-height: 1
           }
+
+          .carousel-caption {
+            position: absolute;
+            right: 0;
+            bottom: 88PX;
+            left: auto;
+            width: 350px;
+            padding: 30px;
+            padding-left: 48px;
+            text-align: left;
+            background-color: #fff;
+            opacity: 0.7;
+            
+            &-title {
+              font-size: 26px;
+              font-weight: 600;
+            }
+
+            &-description {
+              font-size: 20px;
+            }
+          } 
         }
   
         .carousel-control {
           height: 100vh;
         }
       }
-  }
+  
   
   .banner-bg {
     width: 96.9%;

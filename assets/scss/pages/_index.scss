@@ -14,9 +14,9 @@ main{
   
   .campass {
     position: absolute;
-    top: 244px;
+    top: 123px;
     right: -6px;
-    transform: rotate(-45deg);
+    transform: rotate(-5deg);
   }
 
   .input-outline {
@@ -38,12 +38,12 @@ main{
         box-sizing: border-box;
         box-shadow: 0px 0px 0px 2px #888;
 
-        input {
+        .input {
           width: 100%;
           height: 100%;
           border: 3px solid #888;
           box-sizing: border-box;
-          background-color: #B0CD8E;
+          background-color: $theme-green;
         }
 
         .input-inside {
@@ -57,102 +57,102 @@ main{
           align-items: center;
           justify-content: space-between;
           font-size: 23px;
-          font-weight: 500;
 
           &-left {
-            span {
-              vertical-align: middle;
+            width: 87%;
+            display: flex;
+            align-items: center;
+
+            .search-input {
+              outline: none;
+              width: 89%;
+              border-style: none;
+              background-color: $theme-green;
+
+              &::placeholder {
+                color: #000000;
+                font-size: 23px;
+                font-weight: 450;
+
+
+              }
             }
           }
 
+          button {
+            color: #000;
+            font-size: 23px;
+            font-weight: 450;
+            background-color: $theme-green;
+            padding: 5px 10px;
+            border-radius: 12px;
+            border: none;
+
+            &:hover {
+              background-color: #EEE;
+            }
+          }
+
+
         }
+        
       }
   }
 
   .title-bg {
-    position: relative;
-    width: 40%;
+    max-width: 40%;
     margin: 0 auto;
     text-align: center;
+    padding: 25px 10px;
+    background-image: url(/assets/images/titile-bg-news.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
 
     .title {
-      position: absolute;
       font-weight: 700;
       font-size: 2.3rem;
       letter-spacing: 19px;
-      top: 56px;
-      left: 190px;
+      padding-top: 26px;
     }
+
+    
+
   }
 
-  // banner
-  .banner-part {
-    position: relative;
-    max-width: 100%;
-
-    .banner-content {
-      position: absolute;
-      outline: 1px solid #625B5A;
-      width: 356px;
-      height: 382px;
-      top: 35%;
-      right: 3%;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      opacity: 0.85;
-
-      .banner-container {
-        width: 82%;
-        margin: 0 auto;
-      }
-
-      .banner-info {
-        p:nth-child(1) {
-          margin-top: 23px;
-        }
-
-        p:nth-child(2) {
-          font-size: 26px;
-          font-weight: 700;
-        }
-
-        p:nth-child(3) {
-          font-size: 18px;
-        }
-      }
-    }
-
-    .pagination {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 12px;
-      font-size: 18px;
-
-      .page-item {
-        border-radius: -1px;
-
-        .page-link {
-          color: #625B5A;
-        
-          &:focus {
-            color: #fff;
-            background-color: #625B5A;
+  // section 1 - banner
+  .carousel {
+      width: 96vw;
+  
+      .carousel-inner {
+        .carousel-item {
+          width: 100%;
+  
+          img {
+            // width: 100%;
+            // height: 100%;
+            // height: 100vh;
+            line-height: 1
           }
         }
+  
+        .carousel-control {
+          height: 100vh;
+        }
       }
-    }
-
-    .banner-bg {
-      width: 96.9%;
-      padding: 29px 0;
-      margin-left: 23px;
-      transform: skew(38deg);
-      background-color: $theme-green;
-    }
+  }
+  
+  .banner-bg {
+    width: 96.9%;
+    padding: 29px 0;
+    margin-left: 23px;
+    transform: skew(38deg);
+    border-bottom: 1px solid #fff;
+    background-color: $theme-green;
   }
 }
+
+
 // dot-bg
 .bg-dot {
   height: 58px;

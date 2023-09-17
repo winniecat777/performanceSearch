@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <title>會員註冊(一般會員)- 藝吧查表演</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
@@ -14,6 +14,39 @@
       <div class="dashed-bg">
       <%- include('./layout/bannerSwiper') -%>
         <div class="container">
+          <div class="d-none d-lg-block nav mt-lg-10">
+            <a class="px-3 px-lg-5 fs-5" href="index.html">首頁</a><span class="fs-5">></span><a class="px-3 px-lg-5 fs-5" href="activityInfo.html">會員註冊 (一般會員)</a>
+          </div>
+          <div class="row justify-content-center my-5 my-lg-10">
+            <div class="col-10 col-lg-6 registration-container card p-6 p-lg-10">
+              <h2 class="mb-4 text-center">會員註冊</h2>
+              <div class="my-6 d-flex justify-content-between mx-lg-auto">
+                  <a href="signUp-performingGroup.html" class="btn btn-primary mx-lg-10">一般會員</a>
+                  <a href="signUp-generalMember.html" class="btn btn-primary mx-lg-10">表演團體</a>
+              </div>
+              <form>
+                  <div class="mb-3">
+                      <label for="username" class="form-label">帳號</label>
+                      <input type="text" class="form-control" id="username" name="username" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">電子郵件</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="password" class="form-label">密碼</label>
+                      <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="confirmPassword" class="form-label">確認密碼</label>
+                      <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                  </div>
+                  <div class="mb-3">
+                      <button type="submit" class="col-12 mt-4 py-4 btn btn-primary text-dark">確認送出</button>
+                  </div>
+              </form>
+          </div> 
+        </div>
             
             
   

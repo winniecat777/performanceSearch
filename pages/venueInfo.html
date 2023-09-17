@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <title>場地資訊- 藝吧查表演</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
@@ -13,11 +13,186 @@
     <%- include('./layout/header'); -%>
       <div class="dashed-bg">
       <%- include('./layout/bannerSwiper') -%>
-        <div class="container">
-            
-            
-  
-        </div>
+        <div class="container pb-10">
+          <div class="nav mt-10">
+            <a class="px-5 fs-5" href="index.html">首頁</a><span class="fs-5">></span><a class="px-5 fs-5" href="activityInfo.html">場地資訊</a>
+          </div>
+          <div class="row mt-7">
+            <div class="col-3">
+              <div class="bg-primary pt-5 px-10 pb-10">
+                <h2 class="text-center">篩選條件</h2>
+                <p class="fs-6">時間</p>
+                <div class="d-flex justify-content-between mt-4">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      年份
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">2021</a></li>
+                      <li><a class="dropdown-item" href="#">2022</a></li>
+                      <li><a class="dropdown-item" href="#">2023</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      月份
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">一月 January</a></li>
+                      <li><a class="dropdown-item" href="#">二月 February</a></li>
+                      <li><a class="dropdown-item" href="#">三月 March</a></li>
+                      <li><a class="dropdown-item" href="#">四月 April</a></li>
+                      <li><a class="dropdown-item" href="#">五月 May</a></li>
+                      <li><a class="dropdown-item" href="#">六月 June</a></li>
+                      <li><a class="dropdown-item" href="#">七月 July</a></li>
+                      <li><a class="dropdown-item" href="#">八月 August</a></li>
+                      <li><a class="dropdown-item" href="#">九月 October</a></li>
+                      <li><a class="dropdown-item" href="#">十月 November</a></li>
+                      <li><a class="dropdown-item" href="#">十一月 November</a></li>
+                      <li><a class="dropdown-item" href="#">十二月 December</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="fs-6 mt-4">地點 / 地區</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle mt-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    行政區
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="max-height: 200px; overflow-y: auto;" >
+                    <li><a class="dropdown-item" href="#">中區</a></li>
+                    <li><a class="dropdown-item" href="#">東區</a></li>
+                    <li><a class="dropdown-item" href="#">西區</a></li>
+                    <li><a class="dropdown-item" href="#">南區</a></li>
+                    <li><a class="dropdown-item" href="#">北區</a></li>
+                    <li><a class="dropdown-item" href="#">西屯區</a></li>
+                    <li><a class="dropdown-item" href="#">南屯區</a></li>
+                    <li><a class="dropdown-item" href="#">北屯區</a></li>
+                    <li><a class="dropdown-item" href="#">豐原區</a></li>
+                    <li><a class="dropdown-item" href="#">大里區</a></li>
+                    <li><a class="dropdown-item" href="#">太平區</a></li>
+                    <li><a class="dropdown-item" href="#">清水區</a></li>
+                    <li><a class="dropdown-item" href="#">沙鹿區</a></li>
+                    <li><a class="dropdown-item" href="#">大甲區</a></li>
+                    <li><a class="dropdown-item" href="#">東勢區</a></li>
+                    <li><a class="dropdown-item" href="#">梧棲區</a></li>
+                    <li><a class="dropdown-item" href="#">烏日區</a></li>
+                    <li><a class="dropdown-item" href="#">神岡區</a></li>
+                    <li><a class="dropdown-item" href="#">大肚區</a></li>
+                    <li><a class="dropdown-item" href="#">大雅區</a></li>
+                    <li><a class="dropdown-item" href="#">后里區</a></li>
+                    <li><a class="dropdown-item" href="#">霧峰區</a></li>
+                    <li><a class="dropdown-item" href="#">潭子區</a></li>
+                    <li><a class="dropdown-item" href="#">龍井區</a></li>
+                    <li><a class="dropdown-item" href="#">外埔區</a></li>
+                    <li><a class="dropdown-item" href="#">和平區</a></li>
+                    <li><a class="dropdown-item" href="#">石岡區</a></li>
+                    <li><a class="dropdown-item" href="#">大安區</a></li>
+                    <li><a class="dropdown-item" href="#">新社區</a></li>
+                  </ul>
+                </div>
+                <p class="fs-6 mt-4">活動類別</p>
+                <div class="mt-4 d-flex justify-content-between">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="舞蹈" id="checkboxDance">
+                    <label class="form-check-label" for="checkboxDance">
+                      舞蹈
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="音樂" id="checkboxMusic">
+                    <label class="form-check-label" for="checkboxMusic">
+                      音樂
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="話劇" id="checkboxDrama">
+                    <label class="form-check-label" for="checkboxDrama">
+                      話劇
+                    </label>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row  col-md-9">
+              <div class="card ntt-card d-flex flex-row justify-content-center py-6 px-2 mb-7 ms-14"> 
+                <img class="ntt-img me-12" src="/assets/images/ntt.png" alt="ntt-img">
+                <div>
+                  <p>場地名稱：臺中國家歌劇院</p>
+                  <p>聯絡電話：04-2251-1777</p>
+                  <div class="d-flex">
+                    <p>營業時間：</p>
+                    <span> 週一休館 <br>
+                      週日、週二至週四　　　　11:30 - 21:00 <br>
+                      週五至週六及國定假日　　11:30 - 22:00</span>
+                  </div>
+                  <p>地址：臺中市西屯區惠來路二段101號</p>
+                </div>
+              </div>
+              <div class="card ntt-card d-flex flex-row justify-content-center py-6 px-2 mb-7 ms-14"> 
+                <img class="ntt-img me-12" src="/assets/images/ntt.png" alt="ntt-img">
+                <div>
+                  <p>場地名稱：臺中國家歌劇院</p>
+                  <p>聯絡電話：04-2251-1777</p>
+                  <div class="d-flex">
+                    <p>營業時間：</p>
+                    <span> 週一休館 <br>
+                      週日、週二至週四　　　　11:30 - 21:00 <br>
+                      週五至週六及國定假日　　11:30 - 22:00</span>
+                  </div>
+                  <p>地址：臺中市西屯區惠來路二段101號</p>
+                </div>
+              </div>
+              <div class="card ntt-card d-flex flex-row justify-content-center py-6 px-2 mb-7 ms-14"> 
+                <img class="ntt-img me-12" src="/assets/images/ntt.png" alt="ntt-img">
+                <div>
+                  <p>場地名稱：臺中國家歌劇院</p>
+                  <p>聯絡電話：04-2251-1777</p>
+                  <div class="d-flex">
+                    <p>營業時間：</p>
+                    <span> 週一休館 <br>
+                      週日、週二至週四　　　　11:30 - 21:00 <br>
+                      週五至週六及國定假日　　11:30 - 22:00</span>
+                  </div>
+                  <p>地址：臺中市西屯區惠來路二段101號</p>
+                </div>
+              </div>
+              <div class="card ntt-card d-flex flex-row justify-content-center py-6 px-2 mb-7 ms-14"> 
+                <img class="ntt-img me-12" src="/assets/images/ntt.png" alt="ntt-img">
+                <div>
+                  <p>場地名稱：臺中國家歌劇院</p>
+                  <p>聯絡電話：04-2251-1777</p>
+                  <div class="d-flex">
+                    <p>營業時間：</p>
+                    <span> 週一休館 <br>
+                      週日、週二至週四　　　　11:30 - 21:00 <br>
+                      週五至週六及國定假日　　11:30 - 22:00</span>
+                  </div>
+                  <p>地址：臺中市西屯區惠來路二段101號</p>
+                </div>
+              </div>
+              <nav aria-label="Page">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>      
       </div>
     <%- include('./layout/footer'); -%>
     <%- include('./layout/toTop-btn') -%>

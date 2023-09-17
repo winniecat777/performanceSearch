@@ -21,54 +21,109 @@
 
     <!-- dashed-background start -->
     <div class="dashed-bg">
-      <img class="curve" src="../../assets/images/bg-dash-curve.png" alt="">
-      <img class="campass" src="../../assets/images/campass.png" alt="">
+      <img class="curve mt-6" src="/assets/images/bg-dash-curve.png" alt="">
+      <img class="campass" src="/assets/images/campass.png" alt="">
       <div class="input-outline">
         <div class="box">
-          <input type="text">
+          <div class="input"></div>
           <div class="input-inside">
             <div class="input-inside-left">
               <img src="../../assets/images/Search.png" alt="">
-              <span>查表演</span>
+              <input class="search-input" type="text" placeholder="查表演">
             </div>
-            <span>搜尋</span>
+            <button>搜尋</button>
           </div>
         </div>
       </div>
-      <div class="title-bg">
-        <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/titile-bg-news.png" alt="">
+      <div class="title-bg mb-6">
         <h2 class="title">熱門演出</h2>
       </div>
     </div>
     <!-- dashed-background end -->
 
     <!-- banner start -->
-    <div class="banner-part">
-      <div class="banner-content">
-        <div class="banner-info banner-container">
-          <p>真善美藝術表演中心</p>
-          <p>狼與彼得 TASO互動式親<br>子音樂會</p>
-          <p>
-            音樂X戲劇X互動演出 <br>
-            經典作品神反轉！<br>
-            一起來段意想不到的音樂冒險
-          </p>
+    <div id="carouselExampleDark" class="carousel carousel-fade carousel-dark slide" data-bs-ride="carousel">
+      <div class="deco-border d-flex justify-content-center">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1">1</button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4">4</button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5">5</button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6">6</button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7">7</button>
         </div>
-        <hr>
-        <ul class="pagination banner-container">
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item"><a class="page-link" href="#">6</a></li>
-          <li class="page-item"><a class="page-link" href="#">7</a></li>
-        </ul>
       </div>
-      <img class="banner-img" src="https://github.com/winniecat777/performanceSearch/blob/main/assets/images/Rectangle.png?raw=true" alt="">
-      <div class="banner-bg"></div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner01.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">卡普松《美麗人生》</h5>
+            <p class="carousel-caption-description">&nbsp;在卡普松的浪漫大提琴聲中，<br>&nbsp;徜徉美麗人生！</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner02.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">《寶玉》</h5>
+            <p class="carousel-caption-description">&nbsp;&nbsp;黃柔閩＋陳禹安 跨界同台，<br>&nbsp;&nbsp;「捧在手心上，孔雀卵丸大」</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner04.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">《幻象製造所》</h5>
+            <p class="carousel-caption-description">&nbsp;&nbsp;&nbsp;製造出奇幻的異度空間，<br>&nbsp;&nbsp;&nbsp;分身乏術，內心錯亂</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner03.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">躍演《勸世三姊妹》</h5>
+            <p class="carousel-caption-description">&nbsp;首演登台好評席捲，<br>&nbsp;劇粉譽為此生必看！</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner01.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">卡普松《美麗人生》</h5>
+            <p class="carousel-caption-description">在卡普松的浪漫大提琴聲中，<br>徜徉美麗人生！</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner02.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">《寶玉》</h5>
+            <p class="carousel-caption-description">&nbsp;&nbsp;黃柔閩＋陳禹安 跨界同台，<br>&nbsp;&nbsp;「捧在手心上，孔雀卵丸大」</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/winniecat777/performanceSearch/main/assets/images/banner03.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-caption-title">躍演《勸世三姊妹》</h5>
+            <p class="carousel-caption-description">&nbsp;首演登台好評席捲，<br>&nbsp;劇粉譽為此生必看！</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     
+    <div class="banner-bg"></div>
     <!-- banner end -->
 
   </section>
@@ -82,60 +137,67 @@
         <img src="/assets/images/h2-bg-side.png" alt="h2-bg-side">
       </div>
       <div>
-        <div class="row row-cols-xxl-4 g-lg-4 d-none d-lg-flex px-md-10 pt-10 mb-10">
+        <div class="row g-lg-4 d-none d-lg-flex px-md-10 pt-10 mb-10">
           <div class="col-10 col-lg-6 col-xxl-3">
-            <div class="card border position-relative no-border-radius">
+            <div class="card performance-card border position-relative no-border-radius">
+              <a class="performance-link" href="activityInfo.html">
               <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius img-fluid">
               <div class="card-body">
                 <p class="card-text mb-2">真善美藝術表演中心</p>
                 <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
                 <p class="card-text fs-8">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
-                <a href="activityInfo.html" class="button-gray border position-absolute top-50 end-0 translate-middle-y">分類</a>
+                <span class="performance-span position-absolute">分類</span>
               </div>
+            </a>
             </div>
           </div>
           <div class="col-10 col-lg-6 col-xxl-3">
-            <div class="card border position-relative no-border-radius">
+            <div class="card performance-card border position-relative no-border-radius">
+              <a class="performance-link" href="activityInfo.html">
               <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius img-fluid">
               <div class="card-body">
                 <p class="card-text mb-2">真善美藝術表演中心</p>
                 <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
                 <p class="card-text fs-8">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
-                <a href="activityInfo.html" class="button-gray border position-absolute top-50 end-0 translate-middle-y">分類</a>
+                <span class="performance-span position-absolute">分類</span>
               </div>
+            </a>
             </div>
           </div>
           <div class="col-10 col-lg-6 col-xxl-3">
-            <div class="card border position-relative no-border-radius">
+            <div class="card performance-card border position-relative no-border-radius">
+              <a class="performance-link" href="activityInfo.html">
               <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius img-fluid">
               <div class="card-body">
                 <p class="card-text mb-2">真善美藝術表演中心</p>
                 <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
                 <p class="card-text fs-8">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
-                <a href="activityInfo.html" class="button-gray border position-absolute top-50 end-0 translate-middle-y">分類</a>
+                <span class="performance-span position-absolute">分類</span>
               </div>
+            </a>
             </div>
           </div>
           <div class="col-10 col-lg-6 col-xxl-3">
-            <div class="card border position-relative no-border-radius">
+            <div class="card performance-card border position-relative no-border-radius">
+              <a class="performance-link" href="activityInfo.html">
               <img src="/assets/images/index.banner.png" alt="" class="card-img-top no-border-radius img-fluid">
               <div class="card-body">
                 <p class="card-text mb-2">真善美藝術表演中心</p>
                 <h3 class="card-title fs-5 mb-3">狼與彼得 TASO 互動式親子音樂會</h3>
                 <p class="card-text fs-8">音樂X戲劇X互動演出<br>經典作品神反轉!<br>一起來段意想不到的音樂冒險</p>
-                <a href="activityInfo.html" class="button-gray border position-absolute top-50 end-0 translate-middle-y">分類</a>
+                <span class="performance-span position-absolute">分類</span>
               </div>
+            </a>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
         <div #swiperRef="" class="swiper swiperCourse">
           <div class="swiper-wrapper d-flex d-lg-none">
             <div class="swiper-slide">
-              <div class="swiperCourse-card position-relative">
+              <div class="swiperPerformance-card position-relative">
                 <a class="swiperCourse-link" href="activityInfo.html">
-                  <img class="swiperCourse-img" src="../assets/images/course01.jpeg" alt="course01">
-                  <span class="position-absolute top-50 swiperCourse-span">分類</span>
+                  <img class="swiperCourse-img" src="/assets/images/index.banner.png" alt="course01">
+                  <span class="position-absolute swiperPerformance-span">分類</span>
                   <div class="bg-white p-5 text-start">
                     <p class="mb-2">真善美藝術表演中心</p>
                     <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
@@ -145,10 +207,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperCourse-card position-relative">
+              <div class="swiperPerformance-card position-relative">
                 <a class="swiperCourse-link" href="activityInfo.html">
-                  <img class="swiperCourse-img" src="../assets/images/course04.jpeg" alt="course04">
-                  <span class="position-absolute top-50 swiperCourse-span">分類</span>
+                  <img class="swiperCourse-img" src="/assets/images/index.banner.png" alt="course04">
+                  <span class="position-absolute swiperPerformance-span">分類</span>
                   <div class="bg-white p-5 text-start">
                     <p class="mb-2">真善美藝術表演中心</p>
                     <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
@@ -158,10 +220,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperCourse-card position-relative">
+              <div class="swiperPerformance-card position-relative">
                 <a class="swiperCourse-link" href="activityInfo.html">
-                  <img class="swiperCourse-img" src="../assets/images/course07.jpeg" alt="course07">
-                  <span class="position-absolute top-50 swiperCourse-span">分類</span>
+                  <img class="swiperCourse-img" src="/assets/images/index.banner.png" alt="course07">
+                  <span class="position-absolute swiperPerformance-span">分類</span>
                   <div class="bg-white p-5 text-start">
                     <p class="mb-2">真善美藝術表演中心</p>
                     <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
@@ -171,10 +233,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperCourse-card position-relative">
+              <div class="swiperPerformance-card position-relative">
                 <a class="swiperCourse-link" href="activityInfo.html">
-                  <img class="swiperCourse-img" src="../assets/images/course04.jpeg" alt="course04">
-                  <span class="position-absolute top-50 swiperCourse-span">分類</span>
+                  <img class="swiperCourse-img" src="/assets/images/index.banner.png" alt="course04">
+                  <span class="position-absolute swiperPerformance-span">分類</span>
                   <div class="bg-white p-5 text-start">
                     <p class="mb-2">真善美藝術表演中心</p>
                     <h3 class="fs-5 mb-3">狼與彼得 TASO互動式親子音樂會</h3>
@@ -345,25 +407,25 @@
       <div class="introduce-bgtop"></div>
       <div class="container pt-13 pb-14">
         <ul class="row d-flex justify-content-center">
-          <li class=" list-unstyled col-10 col-md-6 col-xl-3  text-center mb-5 d-flex">
+          <li class=" list-unstyled col-8 col-md-6 col-xl-3  text-center mb-5 d-flex">
             <div class="card introduce-card py-10 px-12">
               <img class="introduce-img" src="/assets/images/big-icon01.png" alt="big-icon01">
               <p class="fs-6">多元搜尋</p>
             </div>
           </li>
-          <li class=" list-unstyled col-10 col-md-6 col-xl-3  text-center mb-5 d-flex">
+          <li class=" list-unstyled col-8 col-md-6 col-xl-3  text-center mb-5 d-flex">
             <div class="card introduce-card py-10 px-12">
               <img class="introduce-img" src="/assets/images/big-icon02.png" alt="big-icon01">
               <p class="fs-6">清楚易懂的 <br> 場地資訊</p>
             </div>
           </li>
-          <li class=" list-unstyled col-10 col-md-6 col-xl-3  text-center d-flex">
+          <li class=" list-unstyled col-8 col-md-6 col-xl-3  text-center d-flex">
             <div class="card introduce-card py-10 px-12 mb-5">
               <img class="introduce-img" src="/assets/images/big-icon03.png" alt="big-icon01">
               <p class="fs-6">將喜歡的資訊 <br> 加入最愛</p>
             </div>
           </li>
-          <li class=" list-unstyled col-10 col-md-6 col-xl-3  text-center d-flex">
+          <li class=" list-unstyled col-8 col-md-6 col-xl-3  text-center d-flex">
             <div class="card introduce-card py-10 px-12 mb-5">
               <img class="introduce-img" src="/assets/images/big-icon04.png" alt="big-icon01">
               <p class="fs-6">評價分享</p>

@@ -1,0 +1,15 @@
+.form-check-input:checked[type=checkbox] {
+   border: 1px solid $secondary ;
+   background-color: $secondary;
+   color: #fff;
+}
+
+.ntt{
+    &-img{
+        max-width: 30%;
+    }
+    &-card{
+        width: 800px;
+        border: 3px dashed $primary;
+    }
+}

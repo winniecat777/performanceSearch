@@ -11,8 +11,8 @@ main{
 .section-warpper {
   position: relative;
 
-  .dashed-bg {
-    padding: 25px 0px;
+  .dash-bg {
+    padding: 50px 0px;
     background-color: $background;
     background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
     background-image:
@@ -21,19 +21,24 @@ main{
     linear-gradient(to right, transparent $dash-length, $background $dash-length),
     linear-gradient(to bottom, $dash-color $dash-width, transparent $dash-width);
 
+    .curve {
+      width: 25%;
+    }
+
     .campass {
         position: absolute;
         top: 123px;
         right: -6px;
         transform: rotate(-5deg);
+        width: 22%;
     }
     
     .input-outline {
         position: relative;
-        width: 750px;
+        width: 55%;
         height: 119px;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 28px;
         border: 3px solid #ccc;
         box-sizing: border-box;
     
@@ -59,8 +64,8 @@ main{
             position: absolute;
             top: 14px;
             left: 14px;
-            width: 715px;
-            height: 83px;
+            width: 98%;
+            height: 71%;
             padding: 0 27px;
             display: flex;
             align-items: center;
@@ -68,9 +73,13 @@ main{
             font-size: 23px;
     
             &-left {
-              width: 87%;
+              width: 80%;
               display: flex;
               align-items: center;
+
+              .search {
+                width: 12%;
+              }
     
               .search-input {
                 outline: none;
@@ -151,9 +160,9 @@ main{
         .carousel-indicators {
           position: absolute;
           right: 0;
-          bottom: 0;
+          bottom: -16px;
           left: -54px;
-          padding: 15px;
+          padding: 23px;
           display: flex;
           width: 350px;
           border-top: 1px solid #000;
@@ -443,3 +452,91 @@ main{
   
 
 
+// RWD
+// RWD 螢幕尺寸992以下
+@include media-breakpoint-down(lg) {
+  // section 1 
+  .section-warpper {
+
+    // 熱門表演
+    .title-bg {
+      display: none;
+    }
+
+    // section 1 - banner
+    .rwd-bg {
+      padding-bottom: 73px;
+      background-color: $background;
+      background-size: $dash-length*2 $dash-length*2, $grid-size $grid-size;
+      background-image:
+        linear-gradient(to bottom, transparent $dash-length, $background $dash-length),
+        linear-gradient(to right, $dash-color $dash-width, transparent $dash-width),
+        linear-gradient(to right, transparent $dash-length, $background $dash-length),
+        linear-gradient(to bottom, $dash-color $dash-width, transparent $dash-width);
+
+      .carousel {
+          width: 85vw;
+          margin: 0 auto;
+
+          
+      
+          .deco-border {
+            display: none;
+            border: none;
+
+            .carousel-indicators {
+              display: none;
+            }
+          }
+      
+          .carousel-inner {
+            .carousel-caption {
+              display: none;
+            }
+          }
+      }
+
+    }
+
+    .banner-bg {
+      display: none;
+    }
+  }
+}
+
+
+// RWD 螢幕尺寸768以下
+@include media-breakpoint-down(md) {
+  // section 1 
+  .section-warpper {
+    .dash-bg {
+      .campass {
+        top: 19px;
+        right: -6px;
+        transform: rotate(-91deg);
+      }
+
+      .input-outline {
+        width: 85%;
+
+        .box {
+          .input-inside {
+            .input-inside-left {
+              width: 76%;
+
+              .search-input {
+                &::placeholder {
+                  font-size: 20px;
+                }
+              }
+            }
+          
+            .button {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+  }
+ }
+}

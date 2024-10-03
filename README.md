@@ -1,48 +1,48 @@
-# 網頁切版直播班 Vite 範例 - Bootstrap 版本
+# 藝吧查表演
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+https://winniecat777.github.io/performanceSearch/
 
+本專案僅為學習用途，不做任何商業使用
 
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm ru deploy` - 自動化部署
+## 專案介紹
 
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
+提供台中地區近期表演活動、課程與場地資訊的查詢平台
 
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
+## 開發工具
 
-- JavaScript 程式碼可寫在 main.js 檔案
+- `Vite` 建構開發環境
+- `Bootstrap 5` 搭配 `Sass` 進行網頁切版
 
-### 注意事項
-- 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
-- .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
+## 本專案為共同協作，主要負責為如下
 
-## 開發模式的監聽
-vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
+### 首頁
 
+- 找表演、找課程、網頁功能介紹
+  ![首頁](https://i.imgur.com/3jpSTvg.png)
+  ![首頁-手機版](https://i.imgur.com/JTjXiRU.png)
 
-## 部署 gh-pages 流程說明
-### Windows 版本
-1. 在 GitHub 建立一個新的 Repository
+### 活動資訊
 
-2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
-```cmd
-git init # 若已經初始化過就可以不用輸入
-git add .
-git commit -m 'first commit'
-git branch -M main
-git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
-```
+- 以時間、地區、活動類別來建立篩選條件
+  ![活動資訊](https://i.imgur.com/1PvwrRm.png)
 
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+- 也可以點選表演資訊或課程資訊查看近期活動
+  ![課程資訊](https://i.imgur.com/LRdLbSz.png)
+
+### 場地資訊
+
+- 以時間、地區、活動類別來建立篩選條件
+- 提供各個場地詳細資訊
+  ![場地資訊](https://i.imgur.com/RsLECEq.png)
+
+### 關於我們
+
+- 網站開發理念與目的、開發團隊介紹
+  ![關於我們](https://i.imgur.com/AktOQbL.png)
+
+### 會員登入
+
+- 會員登入/註冊
+  ![會員登入](https://i.imgur.com/Vc56phZ.png)
+  ![會員註冊-一般會員](https://i.imgur.com/l2fLjER.png)
+  ![會員註冊-表演團體](https://i.imgur.com/UaPhhLM.png)
